@@ -9,6 +9,7 @@ This folder (`E:\games\mods\locale`) is a git repo (remote `git@github.com:Quell
 - `translated-versions.json` — which mod version (plus hashes of its en and own-uk locale) the pack was translated against. Maintained only by `tools/check-versions.ps1`.
 
 ## ⚠ Reminders (every session that touches the pack)
+- **Never commit or push on your own.** Leave changes uncommitted, show `git status` / `git diff --stat`, and wait until the user has reviewed and explicitly asks. Commit and push are separate approvals.
 - **Start** with `tools/check-versions.ps1`: it lists NEW / UPDATE (en text or mod's own uk changed) / VERSION-only / REMOVED mods and a changed game version. Only UPDATE/NEW need translation work.
 - **After** translating a mod, record it: `tools/check-versions.ps1 -Record <internal-name>[,<name>…]` (or `-All` after a full pass). Don't record mods you didn't actually review.
 - **After** any change to pack files, regenerate `terminology-uk.json` with `tools/terms.ps1` (updates `updatedAt`), then commit both JSON files together with the .cfg changes.
@@ -51,4 +52,4 @@ This folder (`E:\games\mods\locale`) is a git repo (remote `git@github.com:Quell
 3. `tools/diff.ps1 -Out <scratch>\todo` → translate new keys of those mods into the matching pack file. If a mod's own uk changed, drop pack keys it now covers (`verify.ps1` + the "overrides other mod's uk" check).
 4. `normalize.ps1` → `verify.ps1` → `tokens.ps1` → `crossdup.ps1` (rebuilds zip) → `terms.ps1`.
 5. `check-versions.ps1 -Record <the mods you did>` → confirm `check-versions.ps1` reports nothing left.
-6. Bump `version` in `ukrainian-mods-translation/info.json` (and zip name in `crossdup.ps1`), commit, push.
+6. Bump `version` in `ukrainian-mods-translation/info.json` (and zip name in `crossdup.ps1`), then hand over for review. Commit/push only when the user asks.
