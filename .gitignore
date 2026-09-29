@@ -1,0 +1,5 @@
+# Unpacked third-party mods (reference only, not ours to redistribute)
+mods/
+
+# Build output
+*.zip
