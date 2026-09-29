@@ -2,7 +2,8 @@
   "_about": {
     "description": "English → Ukrainian terminology (names of items, entities, fluids, recipes, technologies, etc.) for every installed mod, grouped by mod and category. \"uk\" is the text the game shows with ukrainian-mods-translation installed; \"source\" says where it comes from.",
     "sources": { "official": "Factorio official Ukrainian locale", "mod": "the mod's own Ukrainian locale", "translation-pack": "ukrainian-mods-translation", "resolved-reference": "name built from references to other translated names (e.g. __ITEM__x__ MK2)" },
-    "generated": "2026-09-30"
+    "createdAt": "2026-09-30",
+    "updatedAt": "2026-09-30T02:54:02+03:00"
   },
   "mods": {
     "base": {

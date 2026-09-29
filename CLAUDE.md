@@ -5,7 +5,13 @@ This folder (`E:\games\mods\locale`) is a git repo (remote `git@github.com:Quell
 - Our mod: `ukrainian-mods-translation/` (source). Packaged zip goes to the real mods folder: `E:\games\mods\Factorio\ukrainian-mods-translation_1.0.0.zip`.
 - Official game locale (terminology source of truth): `E:\games\steam\steamapps\common\Factorio\data\{base,space-age,quality,elevated-rails,recycler,core}\locale\{en,uk}\*.cfg`.
 - Factorio version: **2.1**. Environment: Windows, PowerShell 5.1, **no Python**.
-- `terminology-uk.json` — generated en→uk glossary of names, grouped by mod → category → key.
+- `terminology-uk.json` — generated en→uk glossary of names, grouped by mod → category → key. `_about.createdAt` is kept forever, `_about.updatedAt` is set on every regeneration (`tools/terms.ps1` does both).
+- `translated-versions.json` — which mod version (plus hashes of its en and own-uk locale) the pack was translated against. Maintained only by `tools/check-versions.ps1`.
+
+## ⚠ Reminders (every session that touches the pack)
+- **Start** with `tools/check-versions.ps1`: it lists NEW / UPDATE (en text or mod's own uk changed) / VERSION-only / REMOVED mods and a changed game version. Only UPDATE/NEW need translation work.
+- **After** translating a mod, record it: `tools/check-versions.ps1 -Record <internal-name>[,<name>…]` (or `-All` after a full pass). Don't record mods you didn't actually review.
+- **After** any change to pack files, regenerate `terminology-uk.json` with `tools/terms.ps1` (updates `updatedAt`), then commit both JSON files together with the .cfg changes.
 
 ## How the pack works
 - It only adds keys a mod has **not** already translated to `uk` (or where the mod's `uk` equals English). Existing community translations are left alone, with deliberate exceptions listed below.
@@ -29,6 +35,7 @@ This folder (`E:\games\mods\locale`) is a git repo (remote `git@github.com:Quell
 - Open question: Angel's "Smelting" train theme is still «Металургійний …» (user not asked to change yet).
 
 ## Tools (`tools/`, paths are hard-coded to this machine)
+- `check-versions.ps1 [-Record names | -All]` — compare `mods/` against `translated-versions.json` / record translated state (exit code 1 = work needed).
 - `diff.ps1 -Out <dir>` — per mod, dump en keys missing from its uk into `<dir>\<mod>.cfg` (start here after mod updates).
 - `gloss.ps1 -Out <file>` — rebuild official en→uk glossary.
 - `verify.ps1` — conflicts between pack files + keys still untranslated (≈47 expected: names, placeholders, intentional deferrals).
@@ -40,6 +47,8 @@ This folder (`E:\games\mods\locale`) is a git repo (remote `git@github.com:Quell
 
 ## Typical update workflow
 1. User re-extracts updated mods into `mods/`.
-2. `tools/diff.ps1 -Out <scratch>\todo` → translate new keys into the matching pack file.
-3. `normalize.ps1` → `verify.ps1` → `tokens.ps1` → `crossdup.ps1` (rebuilds zip) → `terms.ps1`.
-4. Bump `version` in `ukrainian-mods-translation/info.json` and rename the zip if publishing.
+2. `tools/check-versions.ps1` → see which mods are NEW/UPDATE.
+3. `tools/diff.ps1 -Out <scratch>\todo` → translate new keys of those mods into the matching pack file. If a mod's own uk changed, drop pack keys it now covers (`verify.ps1` + the "overrides other mod's uk" check).
+4. `normalize.ps1` → `verify.ps1` → `tokens.ps1` → `crossdup.ps1` (rebuilds zip) → `terms.ps1`.
+5. `check-versions.ps1 -Record <the mods you did>` → confirm `check-versions.ps1` reports nothing left.
+6. Bump `version` in `ukrainian-mods-translation/info.json` (and zip name in `crossdup.ps1`), commit, push.

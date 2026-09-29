@@ -73,7 +73,16 @@ $w = New-Object Text.StringBuilder
 [void]$w.AppendLine('  "_about": {')
 [void]$w.AppendLine('    "description": ' + (J 'English → Ukrainian terminology (names of items, entities, fluids, recipes, technologies, etc.) for every installed mod, grouped by mod and category. "uk" is the text the game shows with ukrainian-mods-translation installed; "source" says where it comes from.') + ',')
 [void]$w.AppendLine('    "sources": { "official": "Factorio official Ukrainian locale", "mod": "the mod''s own Ukrainian locale", "translation-pack": "ukrainian-mods-translation", "resolved-reference": "name built from references to other translated names (e.g. __ITEM__x__ MK2)" },')
-[void]$w.AppendLine('    "generated": ' + (J (Get-Date -Format 'yyyy-MM-dd')))
+# createdAt is kept from the previous file (old files used "generated"); updatedAt is always now
+$createdAt = $null
+if (Test-Path $outFile) {
+  $m = [regex]::Match([IO.File]::ReadAllText($outFile, [Text.Encoding]::UTF8), '"(?:createdAt|generated)":\s*"([^"]+)"')
+  if ($m.Success) { $createdAt = $m.Groups[1].Value }
+}
+$nowStamp = Get-Date -Format 'yyyy-MM-ddTHH:mm:ssK'
+if (-not $createdAt) { $createdAt = $nowStamp }
+[void]$w.AppendLine('    "createdAt": ' + (J $createdAt) + ',')
+[void]$w.AppendLine('    "updatedAt": ' + (J $nowStamp))
 [void]$w.AppendLine('  },')
 
 $groups = @()
