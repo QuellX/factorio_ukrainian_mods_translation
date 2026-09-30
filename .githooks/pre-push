@@ -1,0 +1,10 @@
+#!/bin/sh
+# Rebuild the mod zip before every push. Enable once per clone: git config core.hooksPath .githooks
+root="$(git rev-parse --show-toplevel)"
+if [ -n "$(git status --porcelain -- "$root/ukrainian-mods-translation")" ]; then
+  echo "pre-push: warning - ukrainian-mods-translation/ has uncommitted changes; they go into the zip too" >&2
+fi
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$root/tools/build-zip.ps1" || {
+  echo "pre-push: zip build failed, push aborted" >&2
+  exit 1
+}

@@ -50,7 +50,8 @@ This folder (`E:\games\mods\locale`) is a git repo (remote `git@github.com:Quell
 - `verify.ps1` — conflicts between pack files + keys still untranslated, counting uk from any mod (≈41 expected: names, placeholders, intentional deferrals).
 - `tokens.ps1` — placeholder integrity (1 expected: `sp-spidertron-dock` drops a repeated `__1__`).
 - `normalize.ps1` — merge repeated sections per file, report duplicate keys.
-- `crossdup.ps1` — drop cross-file duplicate keys, drop empty sections, rebuild zip.
+- `crossdup.ps1` — drop cross-file duplicate keys, drop empty sections, rebuild zip (calls `build-zip.ps1`).
+- `build-zip.ps1` — package the pack as `E:\games\mods\Factorio\ukrainian-mods-translation_<info.json version>.zip`, deleting older versions of our zip. Also runs automatically from the git `pre-push` hook (`.githooks/pre-push`; enable per clone with `git config core.hooksPath .githooks`); a failed build aborts the push.
 - `terms.ps1` — regenerate `terminology-uk.json`.
 - `smelt.ps1`, `enemies.ps1` — one-off helpers (smelting audit, Bob's enemy name generator).
 
@@ -61,4 +62,4 @@ This folder (`E:\games\mods\locale`) is a git repo (remote `git@github.com:Quell
    Also add new mods to `info.json` dependencies as `(?) <internal name>`.
 4. `normalize.ps1` → `verify.ps1` → `tokens.ps1` → `crossdup.ps1` (rebuilds zip) → `terms.ps1`.
 5. `check-versions.ps1 -Record <the mods you did>` → confirm `check-versions.ps1` reports nothing left.
-6. Bump `version` in `ukrainian-mods-translation/info.json` (and zip name in `crossdup.ps1`), then hand over for review. Commit/push only when the user asks.
+6. Bump `version` in `ukrainian-mods-translation/info.json` (zip name follows automatically), then hand over for review. Commit/push only when the user asks.
