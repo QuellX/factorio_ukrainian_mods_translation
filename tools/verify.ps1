@@ -19,6 +19,12 @@ function ParseFile($f, $h, $tag) {
 $mine = [ordered]@{}
 foreach ($f in Get-ChildItem $outDir -Filter *.cfg) { ParseFile $f.FullName $mine $f.Name }
 "--- my keys: $($mine.Count)"
+# Ukrainian from ANY installed mod counts (language packs such as AAI_Language_Pack ship uk for other mods)
+$ukAll = @{}
+foreach ($m in Get-ChildItem $root -Directory) {
+  $ud = Join-Path $m.FullName 'locale\uk'
+  if (Test-Path $ud) { foreach ($f in Get-ChildItem $ud -Filter *.cfg) { $tmp = @{}; ParseFile $f.FullName $tmp $null; foreach ($k in $tmp.Keys) { if (-not $ukAll.ContainsKey($k)) { $ukAll[$k] = $tmp[$k] } } } }
+}
 # coverage
 $total = 0
 foreach ($m in Get-ChildItem $root -Directory) {
@@ -29,7 +35,8 @@ foreach ($m in Get-ChildItem $root -Directory) {
     $v = $e[$k]
     $stripped = [regex]::Replace($v, '__[A-Z_]+__[^_]*?__|__\d+__|\[[^\]]*\]|__plural[^}]*}__|\\n', '')
     if ($stripped -notmatch '[A-Za-z]{2}') { continue }
-    $has = ($u.Contains($k) -and $u[$k].Trim() -ne '' -and -not ($u[$k] -ceq $v)) -or $mine.Contains($k)
+    $uv = if ($u.Contains($k)) { $u[$k] } elseif ($ukAll.ContainsKey($k)) { $ukAll[$k] } else { $null }
+    $has = ($uv -and $uv.Trim() -ne '' -and -not ($uv -ceq $v)) -or $mine.Contains($k)
     if (-not $has) { $total++; "MISSING $($m.Name) :: $($k.Replace("`t",' / ')) = $v" }
   }
 }

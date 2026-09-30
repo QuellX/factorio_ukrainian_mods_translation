@@ -35,7 +35,7 @@ foreach ($f in Get-ChildItem $dir -Filter *.cfg) {
   [IO.File]::WriteAllLines($f.FullName, $out, (New-Object Text.UTF8Encoding $false))
 }
 Add-Type -AssemblyName System.IO.Compression, System.IO.Compression.FileSystem
-$src = 'E:\games\mods\locale\ukrainian-mods-translation'; $zip = 'E:\games\mods\Factorio\ukrainian-mods-translation_1.0.0.zip'
+$src = 'E:\games\mods\locale\ukrainian-mods-translation'; $zip = 'E:\games\mods\Factorio\ukrainian-mods-translation_1.1.0.zip'
 if (Test-Path $zip) { [IO.File]::Delete($zip) }
 $z = [IO.Compression.ZipFile]::Open($zip, 'Create')
 Get-ChildItem $src -Recurse -File | ForEach-Object { [void][IO.Compression.ZipFileExtensions]::CreateEntryFromFile($z, $_.FullName, 'ukrainian-mods-translation/' + $_.FullName.Substring($src.Length + 1).Replace('\', '/')) }
