@@ -21,13 +21,13 @@ foreach ($f in Get-ChildItem $outDir -Filter *.cfg) { ParseFile $f.FullName $min
 "--- my keys: $($mine.Count)"
 # Ukrainian from ANY installed mod counts (language packs such as AAI_Language_Pack ship uk for other mods)
 $ukAll = @{}
-foreach ($m in Get-ChildItem $root -Directory) {
+foreach ($m in Get-ChildItem $root -Directory | Where-Object { $_.Name -notlike 'ukrainian-mods-translation*' }) {
   $ud = Join-Path $m.FullName 'locale\uk'
   if (Test-Path $ud) { foreach ($f in Get-ChildItem $ud -Filter *.cfg) { $tmp = @{}; ParseFile $f.FullName $tmp $null; foreach ($k in $tmp.Keys) { if (-not $ukAll.ContainsKey($k)) { $ukAll[$k] = $tmp[$k] } } } }
 }
 # coverage
 $total = 0
-foreach ($m in Get-ChildItem $root -Directory) {
+foreach ($m in Get-ChildItem $root -Directory | Where-Object { $_.Name -notlike 'ukrainian-mods-translation*' }) {
   $en = Join-Path $m.FullName 'locale\en'; if (-not (Test-Path $en)) { continue }
   $e = [ordered]@{}; foreach ($f in Get-ChildItem $en -Filter *.cfg) { ParseFile $f.FullName $e $null }
   $u = @{}; $ud = Join-Path $m.FullName 'locale\uk'; if (Test-Path $ud) { foreach ($f in Get-ChildItem $ud -Filter *.cfg) { ParseFile $f.FullName $u $null } }

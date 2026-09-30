@@ -3,3 +3,7 @@ mods/
 
 # Build output
 *.zip
+
+# Archives (build output / manual packs)
+*.7z
+*.rar

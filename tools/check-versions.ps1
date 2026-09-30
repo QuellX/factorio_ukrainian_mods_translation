@@ -40,7 +40,7 @@ function J($s) { if ($null -eq $s) { return 'null' }; '"' + ($s -replace '\\', '
 
 # Current state of every mod in mods/
 $current = [ordered]@{}
-foreach ($d in Get-ChildItem $modsDir -Directory | Sort-Object Name) {
+foreach ($d in Get-ChildItem $modsDir -Directory | Where-Object { $_.Name -notlike 'ukrainian-mods-translation*' } | Sort-Object Name) {
   $infoPath = Join-Path $d.FullName 'info.json'; if (-not (Test-Path $infoPath)) { continue }
   $info = Get-Content $infoPath -Raw -Encoding UTF8 | ConvertFrom-Json
   $current[$info.name] = [ordered]@{

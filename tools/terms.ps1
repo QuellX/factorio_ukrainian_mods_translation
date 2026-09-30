@@ -43,7 +43,7 @@ foreach ($p in @('base','space-age','quality','elevated-rails','recycler','core'
   foreach ($k in $e.Keys) { $globEn[$k] = $e[$k] }; foreach ($k in $u.Keys) { $globUk[$k] = $u[$k] }
 }
 $mods = @()
-foreach ($d in Get-ChildItem "$root\mods" -Directory | Where-Object { $_.Name -ne 'ukrainian-mods-translation' }) {
+foreach ($d in Get-ChildItem "$root\mods" -Directory | Where-Object { $_.Name -notlike 'ukrainian-mods-translation*' }) {
   $info = Get-Content "$($d.FullName)\info.json" -Raw -Encoding UTF8 | ConvertFrom-Json
   $e = ParseDir "$($d.FullName)\locale\en"; if ($e.Count -eq 0) { continue }
   $u = ParseDir "$($d.FullName)\locale\uk"

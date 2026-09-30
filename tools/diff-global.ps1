@@ -29,7 +29,7 @@ function ParseDir($dir, $h, $tag) {
 }
 
 $info = @{}
-foreach ($d in Get-ChildItem $modsDir -Directory) {
+foreach ($d in Get-ChildItem $modsDir -Directory | Where-Object { $_.Name -notlike 'ukrainian-mods-translation*' }) {
   $p = Join-Path $d.FullName 'info.json'; if (Test-Path $p) { $info[(Get-Content $p -Raw -Encoding UTF8 | ConvertFrom-Json).name] = $d.FullName }
 }
 if ($AllNew) {
