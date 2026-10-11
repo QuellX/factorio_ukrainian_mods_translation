@@ -3,7 +3,7 @@
     "description": "English → Ukrainian terminology (names of items, entities, fluids, recipes, technologies, etc.) for every installed mod, grouped by mod and category. \"uk\" is the text the game shows with ukrainian-mods-translation installed; \"source\" says where it comes from.",
     "sources": { "official": "Factorio official Ukrainian locale", "mod": "the mod's own Ukrainian locale", "translation-pack": "ukrainian-mods-translation", "resolved-reference": "name built from references to other translated names (e.g. __ITEM__x__ MK2)" },
     "createdAt": "2026-09-30",
-    "updatedAt": "2026-10-11T19:02:20+03:00"
+    "updatedAt": "2026-10-11T20:29:35+03:00"
   },
   "mods": {
     "base": {
@@ -3064,7 +3064,7 @@
         "eRisel-massive-artillery-fire-cloud": { "en": "Fire cloud", "uk": "Вогняна хмара", "source": "translation-pack" },
         "eRisel-big-toxic-artillery-cloud": { "en": "Toxic cloud", "uk": "Токсична хмара", "source": "translation-pack" },
         "eRisel-armory": { "en": "Armory", "uk": "Збройова майстерня", "source": "translation-pack" },
-        "eRisel-repair-turret": { "en": "Repair Turret", "uk": "Ремонтна турель", "source": "translation-pack" },
+        "eRisel-repair-turret": { "en": "Repair Turret", "uk": "Ремонтна башта", "source": "translation-pack" },
         "eRisel-repair-turret-beam": { "en": "Repair beam", "uk": "Ремонтний промінь", "source": "translation-pack" },
         "maintenance-hub": { "en": "Maintenance hub", "uk": "Ремонтний вузол", "source": "translation-pack" },
         "cds-cannon-turret": { "en": "Basic cannon defense system", "uk": "Базова гарматна система оборони", "source": "translation-pack" },
@@ -3112,7 +3112,7 @@
         "eRisel-incendiary-artillery-shell": { "en": "Incendiary artillery shell", "uk": "Запалювальний артилерійський снаряд", "source": "translation-pack" },
         "eRisel-poison-artillery-shell": { "en": "Poison artillery shell", "uk": "Отруйний артилерійський снаряд", "source": "translation-pack" },
         "eRisel-armory": { "en": "Armory", "uk": "Збройова майстерня", "source": "translation-pack" },
-        "eRisel-repair-turret": { "en": "Repair Turret", "uk": "Ремонтна турель", "source": "translation-pack" },
+        "eRisel-repair-turret": { "en": "Repair Turret", "uk": "Ремонтна башта", "source": "translation-pack" },
         "maintenance-hub": { "en": "Maintenance hub", "uk": "Ремонтний вузол", "source": "translation-pack" },
         "eRisel-advanced-repair-pack": { "en": "Advanced repair pack", "uk": "Вдосконалений ремонтний набір", "source": "translation-pack" },
         "eRisel-superior-repair-pack": { "en": "Superior repair pack", "uk": "Найліпший ремонтний набір", "source": "translation-pack" },
@@ -3138,7 +3138,7 @@
         "eRisel-advanced-railgun-shells": { "en": "Advanced railgun shells", "uk": "Вдосконалені снаряди рейкотрона", "source": "translation-pack" },
         "eRisel-advanced-artillery-shells": { "en": "Advanced artillery shells", "uk": "Вдосконалені артилерійські снаряди", "source": "translation-pack" },
         "eRisel-armory": { "en": "Armory", "uk": "Збройова майстерня", "source": "translation-pack" },
-        "eRisel-repair-turret": { "en": "Repair Turret", "uk": "Ремонтна турель", "source": "translation-pack" },
+        "eRisel-repair-turret": { "en": "Repair Turret", "uk": "Ремонтна башта", "source": "translation-pack" },
         "eRisel-armory-productivity": { "en": "Armory Productivity 1", "uk": "Продуктивність збройової майстерні 1", "source": "translation-pack" },
         "eRisel-armory-productivity-2": { "en": "Armory Productivity 2", "uk": "Продуктивність збройової майстерні 2", "source": "translation-pack" },
         "eRisel-armory-productivity-3": { "en": "Armory Productivity 3", "uk": "Продуктивність збройової майстерні 3", "source": "translation-pack" },

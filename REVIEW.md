@@ -21,6 +21,7 @@ Translations of mods that are no longer installed stay in the pack; the few that
 | 10 | Angel's "Smelting" train theme | still «Металургійний …» | Open question from earlier batches. |
 | 11 | PlanetsLib `parts-per-million` / `parts-per-billion` units | left as `ppm` / `ppb` | Could be «млн⁻¹» / «млрд⁻¹». |
 | 12 | Russian reference ignored | rubia (meme names), minimalist-rails ("неодимовые"), TwoMoreTurrets ("Зенитное") | Followed English instead of the mod's Russian. |
+| 13 | `autoplace-control-names/gleba-spawner`, `…-small` (`medium-mods-8.cfg`) | «Скупчення яєць», «Невелике скупчення яєць» (official entity names) | Tenebris Prime creates these autoplace controls with no locale at all ("Unknown key" in every language); upstream bug — non-uk players still see the error. |
 
 ## 2. Pack keys that override official game text
 
