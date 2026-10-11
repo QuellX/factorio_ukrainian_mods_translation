@@ -142,6 +142,31 @@ foreach ($g in $groups) {
   [void]$b.Append(($secLines -join ",`r`n") + "`r`n    }")
   $modBlocks += $b.ToString()
 }
+# Keep the groups of mods that are not installed right now (user rule: never drop translations of
+# missing mods). They are copied unchanged from the previous file and marked "notInstalled".
+if (Test-Path $outFile) {
+  $prev = [IO.File]::ReadAllText($outFile, [Text.Encoding]::UTF8) | ConvertFrom-Json
+  $current = @{}; foreach ($g in $groups) { $current[$g.Name] = 1 }
+  foreach ($p in $prev.mods.PSObject.Properties) {
+    if ($current.ContainsKey($p.Name)) { continue }
+    $b = New-Object Text.StringBuilder
+    [void]$b.AppendLine('    ' + (J $p.Name) + ': {')
+    [void]$b.AppendLine('      "title": ' + (J ([string]$p.Value.title)) + ',')
+    [void]$b.AppendLine('      "notInstalled": true,')
+    $secLines = @()
+    foreach ($s in $p.Value.PSObject.Properties) {
+      if ($s.Name -eq 'title' -or $s.Name -eq 'notInstalled') { continue }
+      $items = @()
+      foreach ($e in $s.Value.PSObject.Properties) {
+        $fields = @(); foreach ($f in $e.Value.PSObject.Properties) { $fields += (J $f.Name) + ': ' + (J ([string]$f.Value)) }
+        $items += '        ' + (J $e.Name) + ': { ' + ($fields -join ', ') + ' }'; $total++
+      }
+      $secLines += '      ' + (J $s.Name) + ": {`r`n" + ($items -join ",`r`n") + "`r`n      }"
+    }
+    [void]$b.Append(($secLines -join ",`r`n") + "`r`n    }")
+    $modBlocks += $b.ToString()
+  }
+}
 [void]$w.AppendLine('  "mods": {')
 [void]$w.Append(($modBlocks -join ",`r`n") + "`r`n  }`r`n}`r`n")
 [IO.File]::WriteAllText($outFile, $w.ToString(), (New-Object Text.UTF8Encoding $false))

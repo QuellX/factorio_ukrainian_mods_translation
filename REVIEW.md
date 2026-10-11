@@ -23,6 +23,23 @@ Translations of mods that are no longer installed stay in the pack; the few that
 | 12 | Russian reference ignored | rubia (meme names), minimalist-rails ("неодимовые"), TwoMoreTurrets ("Зенитное") | Followed English instead of the mod's Russian. |
 | 13 | `autoplace-control-names/gleba-spawner`, `…-small` (`medium-mods-8.cfg`) | «Скупчення яєць», «Невелике скупчення яєць» (official entity names) | Tenebris Prime creates these autoplace controls with no locale at all ("Unknown key" in every language); upstream bug — non-uk players still see the error. |
 
+## 1b. Batch 1.4.0 — Factorio 2.0 / Space Exploration modpack
+
+| # | Where | Decision | Why it is questionable |
+|---|---|---|---|
+| 1 | `info.json` | Pack now targets `factorio_version 2.0`, `base >= 2.0` | Needed for the 2.0.77 game. Not verified that Factorio 2.1 still loads a 2.0 mod. |
+| 2 | `own-*.cfg` (44 files, ~6300 strings) | Mods' own uk copied into the pack (`tools/copy-own-uk.ps1`) | The pack loads last, so if a mod later improves its uk, our copy wins until the tool is rerun. Some copies are older than the installed English (≈60 placeholder mismatches in `own-space-exploration`, `own-Krastorio2`, `own-factoryplanner`… — upstream issues, unchanged). |
+| 3 | `factoryplanner.cfg` | Kept the 1.3.0 translations made for factoryplanner 2.1.18 | Installed now is 2.0.50: `fp/throughput` (extra `__7__`), `fp/picker_invalid_product` (extra `__2__`), `fp/floor_recipe`, `fp/fold_out_subfloors_tt`, `fp/universal_location_tt` were written for the newer English. |
+| 4 | Milestones (10 strings), CursorEnhancements description | Moved from the pack to `inactive-translations.cfg` | The installed (older) versions ship their own uk; our newer-version text would override it. Move back when updating these mods again. |
+| 5 | 25 vanilla overrides + 7 overrides of SE/aai-industry uk from mods not installed (Muluna, K2 Spaced Out, Lignumis, Castra, Angel's, moon-eneas, Crucible…) | Moved to `inactive-translations.cfg` | They would change vanilla/SE text in this modpack. **Moving them back is needed when you switch to the 2.1 modpack again.** |
+| 6 | `damage-type-name/cold` (`small-mods-5.cfg`) | «Мороз» (Cold_biters' English "Frost") | SE's own uk calls the same damage type «Холод». |
+| 7 | `mod-setting-description/robot-attrition-factor` (`new-small-mods.cfg`) | Our translation of robot_attrition's text | SE ships its own uk for this key (different wording). |
+| 8 | `item-name/efficiency-module-4` (`secretas.cfg`) | «Модуль ощадливості 4» (official term) | Overrides SE's own «Модуль ефективності 4». Secretas is not installed; kept as a terminology fix. |
+| 9 | factory-insight `en-fi-*` / `de-fi-*` (≈2300 strings) | Not translated | They are forced-English/German copies for the mod's own language setting (auto/en/de); "Automatic" uses our uk. `verify.ps1` lists them as missing. |
+| 10 | LTN 2.9.1 old strings (`ltn.cfg`) | Translated fresh | LTN_Language_Pack (former source) is not installed now. |
+| 11 | Voidcraft | void = «порожнеча», voidcraft = «ремесло порожнечі», runes «руна … / Вища / Піднесена», arcanology pack «таємнознавчий пакет» | Fantasy terms invented here; no official or community uk exists. |
+| 12 | Transport Drones depots | «Депо пасивного/активного постачання», «Депо запиту», «Буферне депо», «Депо зберігання» | Mirrors logistic chest terms; the mod's root-level keys (`road`, `filter`, `contents`…) are generic. |
+
 ## 2. Pack keys that override official game text
 
 These are intentional when the named mod is enabled (it renames a vanilla thing), but they change vanilla text

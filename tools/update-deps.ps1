@@ -12,7 +12,7 @@ foreach ($m in Get-ChildItem 'E:\games\mods\locale\mods' -Directory) {
   $n = ([IO.File]::ReadAllText($ij, [Text.Encoding]::UTF8) | ConvertFrom-Json).name
   if ($n -and $n -ne $j.name) { if ($names.Add($n)) { "added: $n" } }
 }
-$j.dependencies = @('base >= 2.1') + @($names | ForEach-Object { "(?) $_" })
+$j.dependencies = @('base >= 2.0') + @($names | ForEach-Object { "(?) $_" })
 if ($Version) { $j.version = $Version }
 [IO.File]::WriteAllText($p, ($j | ConvertTo-Json -Depth 5), (New-Object Text.UTF8Encoding $false))
 "deps: $before -> $($names.Count); version $($j.version)"
