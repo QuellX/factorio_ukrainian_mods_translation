@@ -39,6 +39,8 @@ Translations of mods that are no longer installed stay in the pack; the few that
 | 10 | LTN 2.9.1 old strings (`ltn.cfg`) | Translated fresh | LTN_Language_Pack (former source) is not installed now. |
 | 11 | Voidcraft | void = «порожнеча», voidcraft = «ремесло порожнечі», runes «руна … / Вища / Піднесена», arcanology pack «таємнознавчий пакет» | Fantasy terms invented here; no official or community uk exists. |
 | 12 | Transport Drones depots | «Депо пасивного/активного постачання», «Депо запиту», «Буферне депо», «Депо зберігання» | Mirrors logistic chest terms; the mod's root-level keys (`road`, `filter`, `contents`…) are generic. |
+| 13 | Modded planet / space-location names (942 strings in pack files + `inactive-translations.cfg`) | Replaced mechanically with the English name (Muluna, Arig, Linox, Vesta…); adjectives rewritten («Енеаська трава» → «Трава Eneas», «Аріганські теплиці» → «Теплиці Arig») | English names don't decline, so a few sentences may read stiffly («на Muluna», «над Rubia»). Vanilla planets keep official uk (Наувіс, Ґлеба…). Mods' own uk with planet names (Maraxsis «Мараксис», Hyarion, Cerys «Церіс», Nexus-Updated) is not overridden — those mods are not installed now. SE's «Нексус» is a building, not a planet, so it stays. The mineral «Пангліт» (Panglite) stays translated. |
+| 14 | alien-biomes tree names (`english-names.cfg`) | Species and tree-only colour names + `ab-tree` / `ab-stump` forced to English («Auburn Seqnoia Tree») | `olive` and `dustyrose` colour keys are shared with tile names, so they stay Ukrainian: two tree types read «Оливковий … Tree» / «Пилова троянда … Tree». |
 
 ## 2. Pack keys that override official game text
 

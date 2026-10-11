@@ -69,7 +69,7 @@ foreach ($m in $modList) {
   $uk = ParseDir "$($m.Dir)\locale\uk"; $en = ParseDir "$($m.Dir)\locale\en"
   $bySec = [ordered]@{}; $n = 0
   foreach ($k in $uk.Keys) {
-    if ($taken.ContainsKey($k)) { continue }
+    if ($taken.ContainsKey($k) -or $k -like "mod-name`t*") { continue }  # mod names stay English (english-names.ps1)
     $v = $uk[$k]; if ($v.Trim() -eq '') { continue }
     if ($en.Contains($k) -and $en[$k] -eq $v) { continue }
     if ($allEn.ContainsKey("$k`n$v")) { continue }
