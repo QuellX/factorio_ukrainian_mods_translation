@@ -109,5 +109,5 @@ foreach ($n in $current.Keys) {
     if ($textChanged) { $needs++ }
   }
 }
-foreach ($n in $state.Keys) { if (-not $current.Contains($n)) { "REMOVED  $n $($state[$n].version) : no longer installed; its keys in the pack can be dropped" } }
+foreach ($n in $state.Keys) { if (-not $current.Contains($n)) { "REMOVED  $n $($state[$n].version) : no longer installed; KEEP its keys in the pack (only vanilla-overriding ones go to inactive-translations.cfg)" } }
 if ($needs) { "--- $needs mod(s) need translation work"; exit 1 } else { '--- all mods up to date' }

@@ -5,9 +5,10 @@ so pass -Mods explicitly or -AllNew to use every mod missing from translated-ver
                             language packs, or our pack), or whose uk equals English -> translate these
   <Out>\existing\<mod>.cfg  keys that already have Ukrainian from somewhere else, written as
                             key=<uk>   preceded by  ;EN <english>   -> review for terminology
+-Ref ru adds  ;RU <russian>  above each todo key (mod's own ru, else any mod's ru): reference for unclear English.
 Prints a summary table.
 #>
-param([string[]]$Mods, [switch]$AllNew, [Parameter(Mandatory)][string]$Out)
+param([string[]]$Mods, [switch]$AllNew, [Parameter(Mandatory)][string]$Out, [string]$Ref)
 $ErrorActionPreference = 'Stop'
 $repo = Split-Path $PSScriptRoot -Parent
 $modsDir = Join-Path $repo 'mods'
@@ -43,6 +44,9 @@ if ($AllNew) {
 $ukAll = [ordered]@{}
 ParseDir $packDir $ukAll 'pack'
 foreach ($n in $info.Keys | Sort-Object) { ParseDir (Join-Path $info[$n] 'locale\uk') $ukAll $n }
+$refAll = @{}
+if ($Ref) { foreach ($n in $info.Keys | Sort-Object) { ParseDir (Join-Path $info[$n] "locale\$Ref") $refAll $n } }
+$refTag = if ($Ref) { ';' + $Ref.ToUpper() + ' ' } else { '' }
 
 New-Item -ItemType Directory -Force "$Out\todo", "$Out\existing" | Out-Null
 $enc = New-Object Text.UTF8Encoding $false
@@ -52,6 +56,7 @@ foreach ($n in $Mods) {
   $en = [ordered]@{}; ParseDir (Join-Path $info[$n] 'locale\en') $en $null
   if ($en.Count -eq 0) { continue }
   $own = [ordered]@{}; ParseDir (Join-Path $info[$n] 'locale\uk') $own $null
+  $ownRef = @{}; if ($Ref) { ParseDir (Join-Path $info[$n] "locale\$Ref") $ownRef $null }
   $todo = New-Object Text.StringBuilder; $ex = New-Object Text.StringBuilder
   $cT = ''; $cE = ''; $nT = 0; $nE = 0; $src = @{}
   foreach ($k in $en.Keys) {
@@ -65,6 +70,10 @@ foreach ($n in $Mods) {
       [void]$ex.AppendLine(";EN $v"); [void]$ex.AppendLine("$($p[1])=$uk"); $nE++; $src[$from] = 1 + $src[$from]
     } else {
       if ($p[0] -ne $cT) { if ($cT -ne '') { [void]$todo.AppendLine() }; [void]$todo.AppendLine("[$($p[0])]"); $cT = $p[0] }
+      if ($Ref) {
+        $r = if ($ownRef.Contains($k)) { $ownRef[$k] } elseif ($refAll.Contains($k)) { $refAll[$k][0] } else { $null }
+        if ($r -and $r.Trim() -ne '' -and $r -cne $v) { [void]$todo.AppendLine("$refTag$r") }
+      }
       [void]$todo.AppendLine("$($p[1])=$v"); $nT++
     }
   }

@@ -1468,7 +1468,6 @@ Logistic storage => Логістичне зберігання
 Available on planet => Доступно на планеті
 Available in rocket silos => Доступно в ракетних шахтах
 Not enough to fill one rocket => Недостатньо для заповнення однієї ракети
-Waiting on a higher priority request => Очікування виконання запиту з вищим пріоритетом
 Requesting from => Запит з
 Requested by platform => Запитане з платформи
 Available on platforms => Доступно на платформах
