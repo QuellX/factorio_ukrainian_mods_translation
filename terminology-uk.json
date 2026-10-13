@@ -3,7 +3,7 @@
     "description": "English → Ukrainian terminology (names of items, entities, fluids, recipes, technologies, etc.) for every installed mod, grouped by mod and category. \"uk\" is the text the game shows with ukrainian-mods-translation installed; \"source\" says where it comes from.",
     "sources": { "official": "Factorio official Ukrainian locale", "mod": "the mod's own Ukrainian locale", "translation-pack": "ukrainian-mods-translation", "resolved-reference": "name built from references to other translated names (e.g. __ITEM__x__ MK2)" },
     "createdAt": "2026-09-30",
-    "updatedAt": "2026-10-12T18:08:05+03:00"
+    "updatedAt": "2026-10-13T15:19:44+03:00"
   },
   "mods": {
     "base": {
@@ -2551,6 +2551,78 @@
         "cb-cold-splash-small": { "en": "Frosting puddle", "uk": "Крижана калюжа", "source": "translation-pack" }
       }
     },
+    "color-coded-pipes": {
+      "title": "Color Coded Pipes",
+      "fluid-name": {
+        "red": { "en": "Red", "uk": "Червоний", "source": "translation-pack" },
+        "orange": { "en": "Orange", "uk": "Помаранчевий", "source": "translation-pack" },
+        "yellow": { "en": "Yellow", "uk": "Жовтий", "source": "translation-pack" },
+        "green": { "en": "Green", "uk": "Зелений", "source": "translation-pack" },
+        "blue": { "en": "Blue", "uk": "Синій", "source": "translation-pack" },
+        "purple": { "en": "Purple", "uk": "Бузковий", "source": "translation-pack" },
+        "pink": { "en": "Pink", "uk": "Рожевий", "source": "translation-pack" },
+        "black": { "en": "Black", "uk": "Чорний", "source": "translation-pack" },
+        "white": { "en": "White", "uk": "Білий", "source": "translation-pack" },
+        "pride_lesbian_dark_orange": { "en": "Dark Orange (Lesbian)", "uk": "Темно-помаранчевий (лесбійський)", "source": "translation-pack" },
+        "pride_lesbian_orange": { "en": "Orange (Lesbian)", "uk": "Помаранчевий (лесбійський)", "source": "translation-pack" },
+        "pride_lesbian_light_orange": { "en": "Light Orange (Lesbian)", "uk": "Світло-помаранчевий (лесбійський)", "source": "translation-pack" },
+        "pride_lesbian_white": { "en": "White (Lesbian)", "uk": "Білий (лесбійський)", "source": "translation-pack" },
+        "pride_lesbian_pink": { "en": "Pink (Lesbian)", "uk": "Рожевий (лесбійський)", "source": "translation-pack" },
+        "pride_lesbian_dusty_pink": { "en": "Dusty Pink (Lesbian)", "uk": "Пильно-рожевий (лесбійський)", "source": "translation-pack" },
+        "pride_lesbian_dark_rose": { "en": "Dark Rose (Lesbian)", "uk": "Темно-трояндовий (лесбійський)", "source": "translation-pack" },
+        "pride_gay_dark_green": { "en": "Dark Green (Gay)", "uk": "Темно-зелений (гей)", "source": "translation-pack" },
+        "pride_gay_green": { "en": "Green (Gay)", "uk": "Зелений (гей)", "source": "translation-pack" },
+        "pride_gay_light_green": { "en": "Light Green (Gay)", "uk": "Світло-зелений (гей)", "source": "translation-pack" },
+        "pride_gay_white": { "en": "White (Gay)", "uk": "Білий (гей)", "source": "translation-pack" },
+        "pride_gay_light_blue": { "en": "Light Blue (Gay)", "uk": "Блакитний (гей)", "source": "translation-pack" },
+        "pride_gay_indigo": { "en": "Indigo (Gay)", "uk": "Індиго (гей)", "source": "translation-pack" },
+        "pride_gay_blue": { "en": "Blue (Gay)", "uk": "Синій (гей)", "source": "translation-pack" },
+        "pride_bi_pink": { "en": "Pink (Bi)", "uk": "Рожевий (бі)", "source": "translation-pack" },
+        "pride_bi_purple": { "en": "Purple (Bi)", "uk": "Бузковий (бі)", "source": "translation-pack" },
+        "pride_bi_blue": { "en": "Blue (Bi)", "uk": "Синій (бі)", "source": "translation-pack" },
+        "pride_trans_blue": { "en": "Blue (Trans)", "uk": "Блакитний (транс)", "source": "translation-pack" },
+        "pride_trans_pink": { "en": "Pink (Trans)", "uk": "Рожевий (транс)", "source": "translation-pack" },
+        "pride_trans_white": { "en": "White (Trans)", "uk": "Білий (транс)", "source": "translation-pack" },
+        "pride_ace_black": { "en": "Black (Ace)", "uk": "Чорний (ейс)", "source": "translation-pack" },
+        "pride_ace_gray": { "en": "Gray (Ace)", "uk": "Сірий (ейс)", "source": "translation-pack" },
+        "pride_ace_white": { "en": "White (Ace)", "uk": "Білий (ейс)", "source": "translation-pack" },
+        "pride_ace_purple": { "en": "Purple (Ace)", "uk": "Бузковий (ейс)", "source": "translation-pack" },
+        "pride_pan_magenta": { "en": "Magenta (Pan)", "uk": "Пурпуровий (пан)", "source": "translation-pack" },
+        "pride_pan_yellow": { "en": "Yellow (Pan)", "uk": "Жовтий (пан)", "source": "translation-pack" },
+        "pride_pan_cyan": { "en": "Light Blue (Pan)", "uk": "Блакитний (пан)", "source": "translation-pack" },
+        "pride_nonbinary_yellow": { "en": "Yellow (Non-Binary)", "uk": "Жовтий (небінарний)", "source": "translation-pack" },
+        "pride_nonbinary_white": { "en": "White (Non-Binary)", "uk": "Білий (небінарний)", "source": "translation-pack" },
+        "pride_nonbinary_purple": { "en": "Purple (Non-Binary)", "uk": "Бузковий (небінарний)", "source": "translation-pack" },
+        "pride_nonbinary_black": { "en": "Black (Non-Binary)", "uk": "Чорний (небінарний)", "source": "translation-pack" }
+      },
+      "item-group-name": {
+        "color-coded-pipes": { "en": "Color coded fluid handling", "uk": "Кольорові рідинні комунікації", "source": "translation-pack" },
+        "fluid-handling": { "en": "Fluid handling", "uk": "Зберігання рідин", "source": "translation-pack" }
+      }
+    },
+    "companion-drones-mjlfix": {
+      "title": "Companion Drones 2.0",
+      "item-name": {
+        "companion-shield-mk0": { "en": "Companion Shield MK0", "uk": "Щит компаньйона MK0", "source": "translation-pack" },
+        "companion-shield-mk1": { "en": "Companion Shield MK1", "uk": "Щит компаньйона MK1", "source": "translation-pack" },
+        "companion-shield-mk2": { "en": "Companion Shield MK2", "uk": "Щит компаньйона MK2", "source": "translation-pack" },
+        "companion-shield-mk3": { "en": "Companion Shield MK3", "uk": "Щит компаньйона MK3", "source": "translation-pack" },
+        "companion-roboport-mk0": { "en": "Companion Roboport MK0", "uk": "Робопорт компаньйона MK0", "source": "translation-pack" },
+        "companion-roboport-mk1": { "en": "Companion Roboport MK1", "uk": "Робопорт компаньйона MK1", "source": "translation-pack" },
+        "companion-roboport-mk2": { "en": "Companion Roboport MK2", "uk": "Робопорт компаньйона MK2", "source": "translation-pack" },
+        "companion-roboport-mk3": { "en": "Companion Roboport MK3", "uk": "Робопорт компаньйона MK3", "source": "translation-pack" }
+      },
+      "entity-name": {
+        "companion-shield-mk0": { "en": "Companion Shield MK0", "uk": "Щит компаньйона MK0", "source": "translation-pack" },
+        "companion-shield-mk1": { "en": "Companion Shield MK1", "uk": "Щит компаньйона MK1", "source": "translation-pack" },
+        "companion-shield-mk2": { "en": "Companion Shield MK2", "uk": "Щит компаньйона MK2", "source": "translation-pack" },
+        "companion-shield-mk3": { "en": "Companion Shield MK3", "uk": "Щит компаньйона MK3", "source": "translation-pack" },
+        "companion-roboport-mk0": { "en": "Companion Roboport MK0", "uk": "Робопорт компаньйона MK0", "source": "translation-pack" },
+        "companion-roboport-mk1": { "en": "Companion Roboport MK1", "uk": "Робопорт компаньйона MK1", "source": "translation-pack" },
+        "companion-roboport-mk2": { "en": "Companion Roboport MK2", "uk": "Робопорт компаньйона MK2", "source": "translation-pack" },
+        "companion-roboport-mk3": { "en": "Companion Roboport MK3", "uk": "Робопорт компаньйона MK3", "source": "translation-pack" }
+      }
+    },
     "Constructron-Continued": {
       "title": "Constructron-Continued",
       "item-name": {
@@ -2931,6 +3003,48 @@
       },
       "technology-name": {
         "grappling-gun": { "en": "Grappling gun", "uk": "Гакова рушниця", "source": "translation-pack" }
+      }
+    },
+    "HelicopterRevival": {
+      "title": "HelicopterRevival",
+      "tile-name": {
+        "frozen-heli-pad-concrete": { "en": "Frozen HeliPad Refined Concrete", "uk": "Крижаний залізобетон вертолітного майданчика", "source": "translation-pack" },
+        "heli-pad-concrete": { "en": "HeliPad Refined Concrete", "uk": "Залізобетон вертолітного майданчика", "source": "translation-pack" }
+      },
+      "item-name": {
+        "helicopter": { "en": "Helicopter", "uk": "Вертоліт", "source": "translation-pack" },
+        "scout-helicopter": { "en": "Scout Helicopter", "uk": "Розвідувальний вертоліт", "source": "translation-pack" },
+        "heli-rocket-launcher-item": { "en": "Helicopter Rocket Pod", "uk": "Вертолітний ракетний блок", "source": "translation-pack" },
+        "helicopter-remote-equipment": { "en": "Helicopter Remote Control", "uk": "Пульт дистанційного керування вертольотом", "source": "translation-pack" },
+        "heli-pad-item": { "en": "Helicopter Pad", "uk": "Вертолітний майданчик", "source": "translation-pack" },
+        "heli-gun": { "en": "Helicopter Gun", "uk": "Вертолітний кулемет", "source": "translation-pack" },
+        "heli-gun-scout": { "en": "Scout Heli Gun", "uk": "Кулемет розвідувального вертольота", "source": "translation-pack" },
+        "heli-flamethrower": { "en": "Helicopter Flamethrower", "uk": "Вертолітний вогнемет", "source": "translation-pack" },
+        "heli-k2-anti-material-gun": { "en": "Helicopter Anti-Material Gun", "uk": "Вертолітна антиматеріальна гармата", "source": "translation-pack" }
+      },
+      "entity-name": {
+        "heli-entity-_-": { "en": "Helicopter", "uk": "Вертоліт", "source": "translation-pack" },
+        "scout-heli-entity-_-": { "en": "Scout Helicopter", "uk": "Розвідувальний вертоліт", "source": "translation-pack" },
+        "heli-placement-entity-_-": { "en": "Helicopter", "uk": "Вертоліт", "source": "translation-pack" },
+        "scout-heli-placement-entity-_-": { "en": "Scout Helicopter", "uk": "Розвідувальний вертоліт", "source": "translation-pack" },
+        "heli-pad-entity": { "en": "Helicopter Pad", "uk": "Вертолітний майданчик", "source": "translation-pack" },
+        "helicopter-pad": { "en": "Helicopter Pad", "uk": "Вертолітний майданчик", "source": "translation-pack" },
+        "helicopter": { "en": "Helicopter", "uk": "Вертоліт", "source": "translation-pack" },
+        "scout-helicopter": { "en": "Scout Helicopter", "uk": "Розвідувальний вертоліт", "source": "translation-pack" },
+        "heli-pad-placement-entity": { "en": "Helicopter Pad", "uk": "Вертолітний майданчик", "source": "translation-pack" }
+      },
+      "technology-name": {
+        "heli-technology": { "en": "Helicopters", "uk": "Вертольоти", "source": "translation-pack" },
+        "heli-remote-technology": { "en": "Helicopter Remote Control", "uk": "Дистанційне керування вертольотом", "source": "translation-pack" },
+        "heli-technology-scout": { "en": "Scout Helicopter", "uk": "Розвідувальний вертоліт", "source": "translation-pack" },
+        "heli-technology-pad": { "en": "Helicopter Landing Pad", "uk": "Вертолітний посадковий майданчик", "source": "translation-pack" }
+      },
+      "equipment-name": {
+        "helicopter-remote-equipment": { "en": "Helicopter Remote Control", "uk": "Пульт дистанційного керування вертольотом", "source": "translation-pack" }
+      },
+      "virtual-signal-name": {
+        "signal-heli-fuel-warning": { "en": "Low fuel", "uk": "Мало палива", "source": "translation-pack" },
+        "signal-heli-fuel-warning-critical": { "en": "Critical fuel", "uk": "Критично мало палива", "source": "translation-pack" }
       }
     },
     "informatron": {
@@ -3664,15 +3778,6 @@
         "rcalc-selection-tool": { "en": "Rate Calculator selector", "uk": "Селектор вимірів", "source": "translation-pack" }
       }
     },
-    "RateCalculatorPlus": {
-      "title": "Rate Calculator +",
-      "item-name": {
-        "rcalc-heat-dummy": { "en": "Heat", "uk": "Тепло", "source": "translation-pack" },
-        "rcalc-pollution-dummy": { "en": "Pollution", "uk": "Забруднення", "source": "translation-pack" },
-        "rcalc-power-dummy": { "en": "Power", "uk": "Живлення", "source": "translation-pack" },
-        "rcalc-selection-tool": { "en": "Rate Calculator selector", "uk": "Селектор вимірів", "source": "translation-pack" }
-      }
-    },
     "robot_attrition": {
       "title": "Robot Attrition",
       "technology-name": {
@@ -3716,6 +3821,13 @@
       },
       "ammo-category-name": {
         "shield-projection": { "en": "Shield projection", "uk": "Проєкція щита", "source": "translation-pack" }
+      }
+    },
+    "smart-enemy-ai": {
+      "title": "Smart Enemies",
+      "entity-name": {
+        "smart-enemy-ai-target-arithmetic-combinator": { "en": "Adaptive target multiplier", "uk": "Адаптивний множник цілей", "source": "translation-pack" },
+        "smart-enemy-ai-target-constant-combinator": { "en": "Adaptive target mask", "uk": "Адаптивна маска цілей", "source": "translation-pack" }
       }
     },
     "space-exploration": {
@@ -5008,6 +5120,18 @@
         "steampunk-lamp": { "en": "Steampunk Lamp", "uk": "Стімпанк-лампа", "source": "translation-pack" }
       }
     },
+    "StorageTank2_2_0": {
+      "title": "Storage Tank Mk2 2.0",
+      "entity-name": {
+        "storage-tank2": { "en": "Storage Tank Mk2", "uk": "Резервуар MK2", "source": "translation-pack" }
+      },
+      "item-name": {
+        "storage-tank2": { "en": "Storage Tank MK2", "uk": "Резервуар MK2", "source": "translation-pack" }
+      },
+      "technology-name": {
+        "adv-fluid-storage": { "en": "Advanced Fluid Storage", "uk": "Вдосконалене зберігання рідин", "source": "translation-pack" }
+      }
+    },
     "Subsurface": {
       "title": "Subsurface - build beneath your base!",
       "entity-name": {
@@ -5120,12 +5244,6 @@
         "toxic": { "en": "Toxic", "uk": "Токсична", "source": "translation-pack" }
       }
     },
-    "Transport_Drones_Continued_Fixed": {
-      "title": "Transport Drones (Continued, Fixed)",
-      "virtual-signal-name": {
-        "fuel-signal": { "en": "Fuel", "uk": "Паливо", "source": "translation-pack" }
-      }
-    },
     "UPSFriendlyNixieTubeDisplay": {
       "title": "UPS Friendly Nixie Tubes",
       "entity-name": {
@@ -5155,8 +5273,35 @@
         "valves-one_way": { "en": "One way valve", "uk": "Односторонній клапан", "source": "translation-pack" }
       }
     },
+    "zithorian-extra-storage-tanks-port": {
+      "title": "Zithorian's Extra Storage Tanks for 2.0",
+      "entity-name": {
+        "zith-storage-tank-1x1": { "en": "1x1 Storage tank", "uk": "Резервуар 1x1", "source": "translation-pack" },
+        "zith-storage-tank-2x2": { "en": "2x2 Storage tank", "uk": "Резервуар 2x2", "source": "translation-pack" },
+        "zith-storage-tank-3x4": { "en": "3x4 Storage tank", "uk": "Резервуар 3x4", "source": "translation-pack" },
+        "zith-storage-tank-5x5": { "en": "5x5 Storage tank", "uk": "Резервуар 5x5", "source": "translation-pack" }
+      }
+    },
+    "RateCalculatorPlus": {
+      "title": "Rate Calculator +",
+      "notInstalled": true,
+      "item-name": {
+        "rcalc-heat-dummy": { "en": "Heat", "uk": "Тепло", "source": "translation-pack" },
+        "rcalc-pollution-dummy": { "en": "Pollution", "uk": "Забруднення", "source": "translation-pack" },
+        "rcalc-power-dummy": { "en": "Power", "uk": "Живлення", "source": "translation-pack" },
+        "rcalc-selection-tool": { "en": "Rate Calculator selector", "uk": "Селектор вимірів", "source": "translation-pack" }
+      }
+    },
+    "Transport_Drones_Continued_Fixed": {
+      "title": "Transport Drones (Continued, Fixed)",
+      "notInstalled": true,
+      "virtual-signal-name": {
+        "fuel-signal": { "en": "Fuel", "uk": "Паливо", "source": "translation-pack" }
+      }
+    },
     "Voidcraft": {
       "title": "Voidcraft",
+      "notInstalled": true,
       "entity-name": {
         "s6x-voidworks-burner": { "en": "Voidforge", "uk": "Кузня порожнечі", "source": "translation-pack" },
         "s6x-voidworks": { "en": "Voidworks", "uk": "Майстерня порожнечі", "source": "translation-pack" },

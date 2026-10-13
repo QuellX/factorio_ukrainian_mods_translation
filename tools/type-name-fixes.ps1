@@ -21,6 +21,15 @@ while ($null -ne ($l = $sr.ReadLine())) {
   if ($l.IndexOf('-name.') -ge 0) { foreach ($m in $re.Matches($l)) { $used[$m.Groups[1].Value + "`t" + $m.Groups[2].Value] = 1 } }
 }
 $sr.Close()
+# keep keys from the previous run (mods that are not installed now may come back; the keys are harmless)
+$prev = 0
+if (Test-Path $out) {
+  $sec = ''
+  foreach ($l in [IO.File]::ReadAllLines($out, [Text.Encoding]::UTF8)) {
+    if ($l -match '^\[(.+)\]$') { $sec = $matches[1]; continue }
+    if ($l -match '^([^;=][^=]*)=__ITEM__') { $k = "$sec`t" + $matches[1]; if (-not $used.ContainsKey($k)) { $used[$k] = 1; $items[$k] = 1; $prev++ } }
+  }
+}
 $bySec = [ordered]@{}
 foreach ($k in ($used.Keys | Sort-Object)) {
   if (-not $items.ContainsKey($k)) { continue }   # only real items of that type (mods may define such sections themselves)
