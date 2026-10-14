@@ -3,7 +3,7 @@
     "description": "English → Ukrainian terminology (names of items, entities, fluids, recipes, technologies, etc.) for every installed mod, grouped by mod and category. \"uk\" is the text the game shows with ukrainian-mods-translation installed; \"source\" says where it comes from.",
     "sources": { "official": "Factorio official Ukrainian locale", "mod": "the mod's own Ukrainian locale", "translation-pack": "ukrainian-mods-translation", "resolved-reference": "name built from references to other translated names (e.g. __ITEM__x__ MK2)" },
     "createdAt": "2026-09-30",
-    "updatedAt": "2026-10-14T20:25:20+03:00"
+    "updatedAt": "2026-10-14T22:26:08+03:00"
   },
   "mods": {
     "base": {
@@ -5158,9 +5158,9 @@
         "cave-sealing": { "en": "Cave sealing", "uk": "Герметизація печер", "source": "translation-pack" }
       },
       "technology-name": {
-        "surface-drilling": { "en": "Surface drilling", "uk": "Поверхневе свердління", "source": "translation-pack" },
+        "surface-drilling": { "en": "Surface drilling", "uk": "Буріння з поверхні", "source": "translation-pack" },
         "subsurface-exploration": { "en": "Subsurface exploration", "uk": "Дослідження надр", "source": "translation-pack" },
-        "inter-surface-transport": { "en": "Intersurface transport", "uk": "Між поверхневий транспорт", "source": "translation-pack" },
+        "inter-surface-transport": { "en": "Intersurface transport", "uk": "Міжповерхневий транспорт", "source": "translation-pack" },
         "ventilation": { "en": "Ventilation", "uk": "Вентиляція", "source": "translation-pack" }
       },
       "tile-name": {
@@ -5168,7 +5168,7 @@
       },
       "recipe-name": {
         "prospecting": { "en": "Scan for resources...", "uk": "Пошук ресурсів...", "source": "translation-pack" },
-        "surface-drilling-dummy": { "en": "Surface drilling", "uk": "Поверхневе свердління", "source": "translation-pack" }
+        "surface-drilling-dummy": { "en": "Surface drilling", "uk": "Буріння з поверхні", "source": "translation-pack" }
       },
       "surface-property-name": {
         "subsurface-level": { "en": "Underground level", "uk": "Підземний рівень", "source": "translation-pack" }
