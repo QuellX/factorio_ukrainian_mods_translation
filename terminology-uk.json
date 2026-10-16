@@ -3,7 +3,7 @@
     "description": "English → Ukrainian terminology (names of items, entities, fluids, recipes, technologies, etc.) for every installed mod, grouped by mod and category. \"uk\" is the text the game shows with ukrainian-mods-translation installed; \"source\" says where it comes from.",
     "sources": { "official": "Factorio official Ukrainian locale", "mod": "the mod's own Ukrainian locale", "translation-pack": "ukrainian-mods-translation", "resolved-reference": "name built from references to other translated names (e.g. __ITEM__x__ MK2)" },
     "createdAt": "2026-09-30",
-    "updatedAt": "2026-10-15T22:09:55+03:00"
+    "updatedAt": "2026-10-16T18:57:03+03:00"
   },
   "mods": {
     "base": {
@@ -239,7 +239,7 @@
         "medium-explosion": { "en": "Medium explosion", "uk": "Середній вибух", "source": "official" },
         "grenade-explosion": { "en": "Grenade explosion", "uk": "Вибух гранати", "source": "official" },
         "massive-explosion": { "en": "Massive explosion", "uk": "Масивний вибух", "source": "official" },
-        "ground-explosion": { "en": "Ground explosion", "uk": "Вибух землі", "source": "official" },
+        "ground-explosion": { "en": "Ground explosion", "uk": "Підрив землі", "source": "official" },
         "blood-explosion-small": { "en": "Blood explosion small", "uk": "Кривавий вибух, малий", "source": "official" },
         "blood-explosion-big": { "en": "Blood explosion big", "uk": "Великий вибух крові", "source": "official" },
         "blood-explosion-huge": { "en": "Blood explosion huge", "uk": "Здоровенний вибух крові", "source": "official" },
@@ -316,6 +316,7 @@
         "battery-mk2-equipment": { "en": "Personal battery MK2", "uk": "Особиста батарея MK2", "source": "official" },
         "solar-panel-equipment": { "en": "Portable solar panel", "uk": "Портативна сонячна панель", "source": "official" },
         "fission-reactor-equipment": { "en": "Portable fission reactor", "uk": "Портативний ядерний реактор", "source": "official" },
+        "electric-energy-interface-equipment": { "en": "Electric energy interface equipment", "uk": "Спорядження інтерфейсу електроенергії", "source": "official" },
         "personal-laser-defense-equipment": { "en": "Personal laser defense", "uk": "Особиста лазерна оборона", "source": "official" },
         "discharge-defense-equipment": { "en": "Discharge defense", "uk": "Електророзрядна оборона", "source": "official" },
         "exoskeleton-equipment": { "en": "Exoskeleton", "uk": "Екзоскелет", "source": "official" },
@@ -503,6 +504,7 @@
         "tiles": { "en": "Tiles", "uk": "Клітинки", "source": "official" }
       },
       "item-name": {
+        "electric-energy-interface-equipment": { "en": "Electric energy interface equipment", "uk": "Спорядження інтерфейсу електроенергії", "source": "official" },
         "display-panel": { "en": "Display panel", "uk": "Дисплей", "source": "official" },
         "repair-pack": { "en": "Repair pack", "uk": "Ремонтний набір", "source": "official" },
         "stone": { "en": "Stone", "uk": "Камінь", "source": "official" },
@@ -784,14 +786,14 @@
         "deepwater-green": { "en": "Deep green water", "uk": "Глибока зелена вода", "source": "official" },
         "water-shallow": { "en": "Shallow water", "uk": "Мілководдя", "source": "official" },
         "water-mud": { "en": "Marsh", "uk": "Болото", "source": "official" },
-        "sand-1": { "en": "Sand 1", "uk": "Пісок 1", "source": "official" },
+        "sand-1": { "en": "Sand", "uk": "Пісок", "source": "official" },
         "sand-2": { "en": "Sand 2", "uk": "Пісок 2", "source": "official" },
         "sand-3": { "en": "Sand 3", "uk": "Пісок 3", "source": "official" },
-        "red-desert-0": { "en": "Red desert 0", "uk": "Червона пустеля 0", "source": "official" },
+        "red-desert-0": { "en": "Red desert", "uk": "Червона пустеля", "source": "official" },
         "red-desert-1": { "en": "Red desert 1", "uk": "Червона пустеля 1", "source": "official" },
         "red-desert-2": { "en": "Red desert 2", "uk": "Червона пустеля 2", "source": "official" },
         "red-desert-3": { "en": "Red desert 3", "uk": "Червона пустеля 3", "source": "official" },
-        "dirt-1": { "en": "Dirt 1", "uk": "Ґрунт 1", "source": "official" },
+        "dirt-1": { "en": "Dirt", "uk": "Ґрунт", "source": "official" },
         "dirt-2": { "en": "Dirt 2", "uk": "Ґрунт 2", "source": "official" },
         "dirt-3": { "en": "Dirt 3", "uk": "Ґрунт 3", "source": "official" },
         "dirt-4": { "en": "Dirt 4", "uk": "Ґрунт 4", "source": "official" },
@@ -904,7 +906,8 @@
         "magnetic-field": { "en": "Magnetic field", "uk": "Магнітне поле", "source": "official" },
         "solar-power": { "en": "Solar power in atmosphere", "uk": "Сонячна енергія в атмосфері", "source": "official" },
         "solar-power-in-space": { "en": "Solar power in space", "uk": "Сонячна енергія у космосі", "source": "official" },
-        "day-night-cycle": { "en": "Day night cycle", "uk": "Денний нічний цикл", "source": "official" }
+        "day-night-cycle": { "en": "Day night cycle", "uk": "Денний нічний цикл", "source": "official" },
+        "robot-energy-usage": { "en": "Robot energy usage", "uk": "Споживання енергії роботами", "source": "official" }
       },
       "space-location-name": {
         "nauvis": { "en": "Nauvis", "uk": "Наувіс", "source": "official" }
@@ -928,7 +931,9 @@
         "vulcanus-chimney-short": { "en": "Short chimney", "uk": "Короткий димохід", "source": "official" },
         "vulcanus-chimney-truncated": { "en": "Truncated chimney", "uk": "Усічений димохід", "source": "official" },
         "huge-volcanic-rock": { "en": "Huge volcanic rock", "uk": "Величезний вулканічний камінь", "source": "official" },
+        "huge-volcanic-rock-hot": { "en": "Huge hot volcanic rock", "uk": "Величезний гарячий вулканічний камінь", "source": "official" },
         "big-volcanic-rock": { "en": "Big volcanic rock", "uk": "Великий вулканічний камінь", "source": "official" },
+        "big-volcanic-rock-hot": { "en": "Big hot volcanic rock", "uk": "Великий гарячий вулканічний камінь", "source": "official" },
         "boompuff-explosion": { "en": "Boompuff", "uk": "Гуркавка", "source": "official" },
         "biochamber": { "en": "Biochamber", "uk": "Біокамера", "source": "official" },
         "scrap": { "en": "Scrap", "uk": "Брухт", "source": "official" },
@@ -942,10 +947,10 @@
         "fulgoran-ruin-small": { "en": "Small Fulgoran ruin", "uk": "Мала фульґорська руїна", "source": "official" },
         "fulgurite": { "en": "Fulgorite", "uk": "Фульґорит", "source": "official" },
         "fulgurite-small": { "en": "Fulgorite pieces", "uk": "Шматки фульґориту", "source": "official" },
-        "recycler": { "en": "Recycler", "uk": "Переробник", "source": "official" },
         "turbo-loader": { "en": "Turbo loader", "uk": "Турбо завантажувач", "source": "official" },
         "space-platform-hub": { "en": "Space platform hub", "uk": "Вузол космічної платформи", "source": "official" },
         "cargo-bay": { "en": "Cargo bay", "uk": "Вантажний відсік", "source": "official" },
+        "landing-pad-unloading-bay": { "en": "Landing pad unloading bay", "uk": "Відсік розвантаження посадкового майданчика", "source": "official" },
         "cargo-bay-remnants": { "en": "Cargo bay remnants", "uk": "Залишки вантажного відсіку", "source": "official" },
         "tungsten-ore": { "en": "Tungsten ore", "uk": "Вольфрамова руда", "source": "official" },
         "calcite": { "en": "Calcite", "uk": "Кальцит", "source": "official" },
@@ -1107,7 +1112,8 @@
         "mycelium": { "en": "Mycelium", "uk": "Міцелій", "source": "official" },
         "veins": { "en": "Vein", "uk": "Жила", "source": "official" },
         "veins-small": { "en": "Small vein", "uk": "Мала жила", "source": "official" },
-        "fulgoran-gravewort": { "en": "Fulgoran gravewort", "uk": "Фульґорський могильник", "source": "official" },
+        "small-fulgoran-gravewort": { "en": "Small Fulgoran gravewort", "uk": "Малий фульґорський могильник", "source": "official" },
+        "medium-fulgoran-gravewort": { "en": "Medium Fulgoran gravewort", "uk": "Середній фульґорський могильник", "source": "official" },
         "urchin-cactus": { "en": "Urchin cactus", "uk": "Грубий кактус", "source": "official" },
         "brambles": { "en": "Brambles", "uk": "Ожина", "source": "official" },
         "blood-grape": { "en": "Blood grape", "uk": "Кривавий виноград", "source": "official" },
@@ -1299,7 +1305,6 @@
         "nutrients-from-bioflux": { "en": "Nutrients from bioflux", "uk": "Поживні речовини з біофлюксу", "source": "official" },
         "nutrients-from-fish": { "en": "Nutrients from fish", "uk": "Поживні речовини із риби", "source": "official" },
         "nutrients-from-biter-egg": { "en": "Nutrients from biter egg", "uk": "Поживні речовини з яйця кусаки", "source": "official" },
-        "wood-processing": { "en": "Wood processing", "uk": "Обробка деревини", "source": "official" },
         "biosulfur": { "en": "Biosulfur", "uk": "Біосірка", "source": "official" },
         "biolubricant": { "en": "Biolubricant", "uk": "Біомастило", "source": "official" },
         "fish-breeding": { "en": "Fish breeding", "uk": "Розведення риби", "source": "official" },
@@ -1339,6 +1344,7 @@
       },
       "technology-name": {
         "space-platform": { "en": "Space platform", "uk": "Космічна платформа", "source": "official" },
+        "landing-pad-unloading-bay": { "en": "Landing pad unloading bay", "uk": "Відсік розвантаження посадкового майданчика", "source": "official" },
         "bioflux": { "en": "Bioflux", "uk": "Біофлюкс", "source": "official" },
         "bacteria-cultivation": { "en": "Bacteria cultivation", "uk": "Вирощування бактерій", "source": "official" },
         "artificial-soil": { "en": "Artificial soil", "uk": "Штучний ґрунт", "source": "official" },
@@ -1406,17 +1412,21 @@
         "calcite-processing": { "en": "Calcite processing", "uk": "Обробка кальциту", "source": "official" },
         "lithium-processing": { "en": "Lithium processing", "uk": "Обробка літію", "source": "official" },
         "promethium-science-pack": { "en": "Promethium science pack", "uk": "Прометієвий дослідницький пакет", "source": "official" },
-        "foundation": { "en": "Foundation", "uk": "Фундамент", "source": "official" }
+        "foundation": { "en": "Foundation", "uk": "Фундамент", "source": "official" },
+        "stellar-discovery-solar-system-edge": { "en": "Stellar discovery solar system edge", "uk": "Зіркове дослідження: край сонячної системи", "source": "official" }
       },
       "tile-name": {
-        "lowland-olive-blubber-2": { "en": "Olive Blubber 2", "uk": "Оливковий пухирчастий лишайник 2", "source": "official" },
-        "lowland-olive-blubber-3": { "en": "Olive Blubber 3", "uk": "Оливковий пухирчастий лишайник 3", "source": "official" },
-        "lowland-brown-blubber": { "en": "Brown Blubber", "uk": "Коричневий пухирчастий лишайник", "source": "official" },
-        "lowland-pale-green": { "en": "Sickly Blubber", "uk": "Нездоровий пухирчастий лишайник", "source": "official" },
-        "lowland-cream-cauliflower-2": { "en": "Cauliflower mold 2", "uk": "Цвіль з цвітної капусти", "source": "official" },
-        "lowland-cream-red": { "en": "Cauliflower red mold", "uk": "Червона цвіль з цвітної капусти", "source": "official" },
-        "lowland-dead-skin": { "en": "Deadskin mold", "uk": "Мертва цвіль", "source": "official" },
-        "lowland-dead-skin-2": { "en": "Deadskin mold 2", "uk": "Мертва цвіль 2", "source": "official" },
+        "lowland-olive-blubber": { "en": "Olive blubber lichen", "uk": "Оливковий пухирчастий лишайник", "source": "official" },
+        "lowland-olive-blubber-2": { "en": "Olive blubber", "uk": "Оливковий пухирчастий лишайник", "source": "official" },
+        "lowland-olive-blubber-3": { "en": "Olive blubber bright", "uk": "Яскравий оливковий пухирчастий лишайник", "source": "official" },
+        "lowland-brown-blubber": { "en": "Brown blubber", "uk": "Коричневий пухирчастий лишайник", "source": "official" },
+        "lowland-pale-green": { "en": "Sickly blubber", "uk": "Нездоровий пухирчастий лишайник", "source": "official" },
+        "lowland-cream-cauliflower": { "en": "Cauliflower lichen", "uk": "Лишайник \"цвітна капуста\"", "source": "official" },
+        "lowland-cream-cauliflower-2": { "en": "Cauliflower mold", "uk": "Цвіль \"цвітна капуста\"", "source": "official" },
+        "lowland-cream-red": { "en": "Cauliflower red mold", "uk": "Червона цвіль \"цвітна капуста\"", "source": "official" },
+        "lowland-dead-skin": { "en": "Deadskin mold", "uk": "Мертвошкірна цвіль", "source": "official" },
+        "lowland-dead-skin-2": { "en": "Deadskin mold bright", "uk": "Яскрава мертвошкірна цвіль", "source": "official" },
+        "lowland-red-vein": { "en": "Sanguine lichen", "uk": "Криваво-червоний лишайник", "source": "official" },
         "lowland-red-vein-2": { "en": "Red vein bulges", "uk": "Опуклості червоних жилок", "source": "official" },
         "lowland-red-vein-3": { "en": "Red vein dull", "uk": "Тьмяні червоні жилки", "source": "official" },
         "lowland-red-vein-4": { "en": "Red vein bright", "uk": "Яскраві червоні жилки", "source": "official" },
@@ -1425,12 +1435,14 @@
         "midland-cracked-lichen": { "en": "Cracked lichen", "uk": "Потрісканий лишайник", "source": "official" },
         "midland-cracked-lichen-dull": { "en": "Cracked lichen dull", "uk": "Потрісканий тьмяний лишайник", "source": "official" },
         "midland-cracked-lichen-dark": { "en": "Cracked lichen dark", "uk": "Потрісканий темний лишайник", "source": "official" },
-        "midland-turquoise-bark-2": { "en": "Turquoise bark 2", "uk": "Бірюзова кора 2", "source": "official" },
+        "midland-turquoise-bark": { "en": "Turquoise bark lichen", "uk": "Лишайник з бірюзовою кіркою", "source": "official" },
+        "midland-turquoise-bark-2": { "en": "Turquoise bark", "uk": "Бірюзова кора", "source": "official" },
         "midland-yellow-crust": { "en": "Orange crust lichen", "uk": "Лишайник з помаранчевою кіркою", "source": "official" },
         "midland-yellow-crust-2": { "en": "Red crust lichen", "uk": "Лишайник з червоною кіркою", "source": "official" },
         "midland-yellow-crust-3": { "en": "Beige crust lichen", "uk": "Лишайник з бежевою кіркою", "source": "official" },
         "midland-yellow-crust-4": { "en": "Yellow crust lichen", "uk": "Лишайник з жовтою кіркою", "source": "official" },
-        "highland-dark-rock-2": { "en": "Highland rock 2", "uk": "Високогірний камінь 2", "source": "official" },
+        "highland-dark-rock": { "en": "Dark dry lichen", "uk": "Темний сухий лишайник", "source": "official" },
+        "highland-dark-rock-2": { "en": "Highland rock", "uk": "Високогірний камінь", "source": "official" },
         "highland-yellow-rock": { "en": "Highland yellow rock", "uk": "Високогірний жовтий камінь", "source": "official" },
         "pit-rock": { "en": "Pit rock", "uk": "Кар'єрний камінь", "source": "official" },
         "empty-space": { "en": "Empty space", "uk": "Порожній простір", "source": "official" },
@@ -1442,24 +1454,27 @@
         "dust-flat": { "en": "Dust flat", "uk": "Рівний пил", "source": "official" },
         "dust-crests": { "en": "Dust crests", "uk": "Гребені пилу", "source": "official" },
         "dust-lumpy": { "en": "Dust lumpy", "uk": "Пилові бугри", "source": "official" },
-        "dust-patchy": { "en": "Dust patchy", "uk": "Сліду пилу", "source": "official" },
-        "brash-ice": { "en": "Brash Ice", "uk": "Фрагменти льоду", "source": "official" },
+        "dust-patchy": { "en": "Dust patchy", "uk": "Плямистий пил", "source": "official" },
+        "brash-ice": { "en": "Brash ice", "uk": "Дрейфівний лід", "source": "official" },
         "ice-rough": { "en": "Rough ice", "uk": "Шорсткий лід", "source": "official" },
         "ice-smooth": { "en": "Smooth ice", "uk": "Гладкий лід", "source": "official" },
         "ice-platform": { "en": "Ice platform", "uk": "Льодова платформа", "source": "official" },
         "frozen-stone-path": { "en": "Frozen stone path", "uk": "Крижана кам'яна доріжка", "source": "official" },
         "frozen-concrete": { "en": "Frozen concrete", "uk": "Крижаний бетон", "source": "official" },
+        "frozen-foundation": { "en": "Frozen foundation", "uk": "Мерзлий фундамент", "source": "official" },
         "frozen-hazard-concrete-left": { "en": "Frozen hazard concrete left", "uk": "Крижаний бетон із небезпечною розміткою ліворуч", "source": "official" },
         "frozen-hazard-concrete-right": { "en": "Frozen hazard concrete right", "uk": "Крижаний бетон із небезпечною розміткою праворуч", "source": "official" },
         "frozen-refined-concrete": { "en": "Frozen refined concrete", "uk": "Крижаний залізобетон", "source": "official" },
         "frozen-refined-hazard-concrete-left": { "en": "Frozen refined hazard concrete left", "uk": "Крижаний залізобетон із розміткою ліворуч", "source": "official" },
         "frozen-refined-hazard-concrete-right": { "en": "Frozen refined hazard concrete right", "uk": "Крижаний залізобетон із розміткою праворуч", "source": "official" },
         "oil-ocean-shallow": { "en": "Oil ocean", "uk": "Нафтовий океан", "source": "official" },
+        "oil-ocean-shallow-2": { "en": "Oil ocean 2", "uk": "Нафтовий океан 2", "source": "official" },
         "oil-ocean-deep": { "en": "Deep oil ocean", "uk": "Глибокий океан нафти", "source": "official" },
+        "oil-ocean-deep-2": { "en": "Deep oil ocean 2", "uk": "Глибокий нафтовий океан 2", "source": "official" },
         "wetland-yumako": { "en": "Yumako wetland", "uk": "Болото юмако", "source": "official" },
         "wetland-jellynut": { "en": "Jellynut wetland", "uk": "Болото желе-горіха", "source": "official" },
         "ammoniacal-ocean": { "en": "Ammoniacal ocean", "uk": "Амонієвий океан", "source": "official" },
-        "ammoniacal-ocean-2": { "en": "Ammoniacal ocean", "uk": "Амонієвий океан", "source": "official" },
+        "ammoniacal-ocean-2": { "en": "Ammoniacal ocean 2", "uk": "Амонієвий океан 2", "source": "official" },
         "natural-yumako-soil": { "en": "Natural yumako soil", "uk": "Природний ґрунт для юмако", "source": "official" },
         "natural-jellynut-soil": { "en": "Natural jellynut soil", "uk": "Природний ґрунт для желе-горіха", "source": "official" },
         "artificial-yumako-soil": { "en": "Artificial yumako soil", "uk": "Штучний ґрунт для юмако", "source": "official" },
@@ -1468,17 +1483,12 @@
         "overgrowth-jellynut-soil": { "en": "Overgrowth jellynut soil", "uk": "Порослий ґрунт для желе-горіха", "source": "official" },
         "wetland-light-green-slime": { "en": "Light green marsh", "uk": "Світло-зелене болото", "source": "official" },
         "wetland-green-slime": { "en": "Green marsh", "uk": "Зелене болото", "source": "official" },
-        "wetland-light-dead-skin": { "en": "Light deadskin marsh", "uk": "Світле мертве болото", "source": "official" },
-        "wetland-dead-skin": { "en": "Deadskin marsh", "uk": "Мертве болото", "source": "official" },
+        "wetland-light-dead-skin": { "en": "Light deadskin marsh", "uk": "Світле мертвошкірне болото", "source": "official" },
+        "wetland-dead-skin": { "en": "Deadskin marsh", "uk": "Мертвошкірне болото", "source": "official" },
         "wetland-pink-tentacle": { "en": "Pink marsh", "uk": "Рожеве болото", "source": "official" },
         "wetland-red-tentacle": { "en": "Red coral marsh", "uk": "Болото червоних коралів", "source": "official" },
         "wetland-blue-slime": { "en": "Blue marsh", "uk": "Блакитне болото", "source": "official" },
         "gleba-deep-lake": { "en": "Deep lake", "uk": "Глибоке озеро", "source": "official" },
-        "lowland-olive-blubber": { "en": "Olive blubber lichen", "uk": "Оливковий пухирчастий лишайник", "source": "official" },
-        "lowland-cream-cauliflower": { "en": "Cauliflower lichen", "uk": "Лишайник цвітної капусти", "source": "official" },
-        "lowland-red-vein": { "en": "Sanguine lichen", "uk": "Криваво-червоний лишайник", "source": "official" },
-        "midland-turquoise-bark": { "en": "Turquoise bark lichen", "uk": "Лишайник з бірюзовою кіркою", "source": "official" },
-        "highland-dark-rock": { "en": "Dark dry lichen", "uk": "Темний сухий лишайник", "source": "official" },
         "lava-hot": { "en": "Hot lava", "uk": "Гаряча лава", "source": "official" },
         "lava": { "en": "Lava", "uk": "Лава", "source": "official" },
         "volcanic-cracks-hot": { "en": "Volcanic cracks hot", "uk": "Гарячі вулканічні тріщини", "source": "official" },
@@ -1570,19 +1580,12 @@
       "technology-name": {
         "quality-module": { "en": "Quality module", "uk": "Модуль якості", "source": "official" },
         "epic-quality": { "en": "Epic quality", "uk": "Епічна якість", "source": "official" },
-        "legendary-quality": { "en": "Legendary quality", "uk": "Легендарна якість", "source": "official" },
-        "recycling": { "en": "Recycling", "uk": "Перероблювання", "source": "official" }
+        "legendary-quality": { "en": "Legendary quality", "uk": "Легендарна якість", "source": "official" }
       },
       "item-name": {
         "quality-module": { "en": "Quality module", "uk": "Модуль якості", "source": "official" },
         "quality-module-2": { "en": "Quality module 2", "uk": "Модуль якості 2", "source": "official" },
         "quality-module-3": { "en": "Quality module 3", "uk": "Модуль якості 3", "source": "official" }
-      },
-      "entity-name": {
-        "recycler": { "en": "Recycler", "uk": "Переробник", "source": "official" }
-      },
-      "recipe-name": {
-        "recycling": { "en": "__1__ recycling", "uk": "Перероблювання __1__", "source": "official" }
       },
       "virtual-signal-name": {
         "signal-any-quality": { "en": "Any quality", "uk": "Будь-якої якості", "source": "official" }
@@ -1603,6 +1606,18 @@
       },
       "technology-name": {
         "elevated-rail": { "en": "Elevated rail", "uk": "Надземні рейки", "source": "official" }
+      }
+    },
+    "recycler": {
+      "title": "Factorio: recycler (official)",
+      "technology-name": {
+        "recycling": { "en": "Recycling", "uk": "Перероблювання", "source": "official" }
+      },
+      "entity-name": {
+        "recycler": { "en": "Recycler", "uk": "Переробник", "source": "official" }
+      },
+      "recipe-name": {
+        "recycling": { "en": "__1__ recycling", "uk": "Перероблювання __1__", "source": "official" }
       }
     },
     "aai-containers": {
@@ -2062,6 +2077,44 @@
         "zones": { "en": "Zones", "uk": "Зони", "source": "translation-pack" }
       }
     },
+    "advanced-biological-sek2-mod": {
+      "title": "Krastorio 2 Advanced Greenhouse and Biolab",
+      "item-name": {
+        "kr-advanced-bio-lab": { "en": "Advanced Bio-Laboratory", "uk": "Вдосконалена біолабораторія", "source": "translation-pack" },
+        "kr-advanced-greenhouse": { "en": "Photosynthesis Amplifier", "uk": "Підсилювач фотосинтезу", "source": "translation-pack" }
+      },
+      "recipe-name": {
+        "kr-advanced-bio-lab": { "en": "Advanced Bio-Laboratory", "uk": "Вдосконалена біолабораторія", "source": "translation-pack" },
+        "kr-advanced-greenhouse": { "en": "Photosynthesis Amplifier", "uk": "Підсилювач фотосинтезу", "source": "translation-pack" },
+        "kr-advanced-biomass": { "en": "Biomass", "uk": "Біомаса", "source": "translation-pack" },
+        "kr-advanced-biter-virus": { "en": "Anti-biter virus capsule.", "uk": "Капсула з вірусом проти кусак.", "source": "translation-pack" },
+        "kr-advanced-pollution-filter": { "en": "Pollution filter.", "uk": "Фільтр забруднення.", "source": "translation-pack" },
+        "kr-advanced-restore-used-pollution-filter": { "en": "Restore used pollution filter.", "uk": "Відновлення використаного фільтра забруднення.", "source": "translation-pack" }
+      },
+      "entity-name": {
+        "kr-advanced-bio-lab": { "en": "Advanced Bio-Laboratory", "uk": "Вдосконалена біолабораторія", "source": "translation-pack" },
+        "kr-advanced-greenhouse": { "en": "Photosynthesis Amplifier", "uk": "Підсилювач фотосинтезу", "source": "translation-pack" }
+      },
+      "technology-name": {
+        "kr-advanced-bio-lab": { "en": "Chronosynthetic Biomass Fabrication", "uk": "Хроносинтетичне виробництво біомаси", "source": "translation-pack" },
+        "kr-advanced-greenhouse": { "en": "Photosynthetic Optimization", "uk": "Оптимізація фотосинтезу", "source": "translation-pack" }
+      }
+    },
+    "advanced-centrifuge": {
+      "title": "Advanced Centrifuge",
+      "item-name": {
+        "k11-advanced-centrifuge": { "en": "Advanced Centrifuge", "uk": "Вдосконалена центрифуга", "source": "translation-pack" }
+      },
+      "recipe-name": {
+        "k11-advanced-centrifuge": { "en": "Advanced Centrifuge", "uk": "Вдосконалена центрифуга", "source": "translation-pack" }
+      },
+      "entity-name": {
+        "k11-advanced-centrifuge": { "en": "Advanced Centrifuge", "uk": "Вдосконалена центрифуга", "source": "translation-pack" }
+      },
+      "technology-name": {
+        "k11-advanced-centrifuge": { "en": "Advanced Centrifuge", "uk": "Вдосконалена центрифуга", "source": "translation-pack" }
+      }
+    },
     "AircraftRealism": {
       "title": "Aircraft Realism",
       "decorative-name": {
@@ -2210,8 +2263,8 @@
         "maf-boss-arachnid-corpse": { "en": "Arachnid Boss corpse", "uk": "Труп боса арахнідів", "source": "translation-pack" }
       }
     },
-    "ArmouredBiters": {
-      "title": "Armoured Biters",
+    "ArmouredBiters21Compat": {
+      "title": "Armoured Biters (2.1 Compat)",
       "entity-name": {
         "small-armoured-biter": { "en": "Small Snapper", "uk": "Малий клацун", "source": "translation-pack" },
         "small_armoured-corpse": { "en": "Small snapper corpse", "uk": "Труп малого клацуна", "source": "translation-pack" },
@@ -2446,27 +2499,43 @@
         "chain_buoy": { "en": "Chain signal buoy", "uk": "Ланцюговий сигнальний буй", "source": "translation-pack" },
         "cargo_ship_engine": { "en": "Ship engine", "uk": "Корабельний двигун", "source": "translation-pack" },
         "oil_tanker": { "en": "Tanker ship", "uk": "Танкер", "source": "translation-pack" },
-        "oil_rig": { "en": "Oil rig", "uk": "Нафтова вишка", "source": "translation-pack" },
-        "or_power_electric": { "en": "Oil rig onboard generator", "uk": "Бортовий генератор нафтової вежі", "source": "translation-pack" },
-        "or_radar": { "en": "Oil rig radar", "uk": "Радар нафтової вежі", "source": "translation-pack" },
-        "or_pole": { "en": "Oil rig power pole", "uk": "Силова опора нафтової вежі", "source": "translation-pack" },
-        "or_tank": { "en": "Oil rig storage tank", "uk": "Резервуар нафтової вежі", "source": "translation-pack" },
-        "or_reactor": { "en": "Oil rig pump heater", "uk": "Нагрівач помпи нафтової вишки", "source": "translation-pack" },
-        "offshore-oil": { "en": "Offshore oil", "uk": "Морська нафта", "source": "translation-pack" },
-        "floating-electric-pole": { "en": "Floating electric pole", "uk": "Плавуча опора ЛЕП", "source": "translation-pack" },
-        "bridge_base": { "en": "Lifting train bridge", "uk": "Звідний залізничний міст", "source": "translation-pack" }
+        "bridge_base": { "en": "Lifting train bridge", "uk": "Звідний залізничний міст", "source": "translation-pack" },
+        "ship-loading-pump": { "en": "Ship loading pump", "uk": "Помпа завантаження кораблів", "source": "translation-pack" },
+        "ship-unloading-pump": { "en": "Ship unloading pump", "uk": "Помпа розвантаження кораблів", "source": "translation-pack" }
       },
       "item-name": {
         "waterway": { "en": "Waterway", "uk": "Водний шлях", "source": "translation-pack" }
       },
       "technology-name": {
         "cargo_ships": { "en": "Cargo ships", "uk": "Вантажний корабельс", "source": "translation-pack" },
-        "oversea-energy-distribution": { "en": "Oversea energy distribution", "uk": "Розподіл енергії за океаном", "source": "translation-pack" },
         "water_transport": { "en": "Water transport", "uk": "Водний транспорт", "source": "translation-pack" },
         "automated_water_transport": { "en": "Automated water transport", "uk": "Автоматизований водний транспорт", "source": "translation-pack" },
         "tank_ship": { "en": "Tanker ships", "uk": "Танкерс", "source": "translation-pack" },
-        "deep_sea_oil_extraction": { "en": "Deep sea oil extraction", "uk": "Глибоководний видобуток нафти", "source": "translation-pack" },
         "automated_bridges": { "en": "Train bridges", "uk": "Залізничні мости", "source": "translation-pack" }
+      }
+    },
+    "cargo-ships-floating-electric-pole": {
+      "title": "Cargo Ships: Floating Electric Pole",
+      "entity-name": {
+        "floating-electric-pole": { "en": "Floating electric pole", "uk": "Плавуча опора ЛЕП", "source": "translation-pack" }
+      },
+      "technology-name": {
+        "oversea-energy-distribution": { "en": "Oversea energy distribution", "uk": "Розподіл енергії за океаном", "source": "translation-pack" }
+      }
+    },
+    "cargo-ships-oil-rig": {
+      "title": "Cargo Ships: Oil Rig",
+      "entity-name": {
+        "oil_rig": { "en": "Oil rig", "uk": "Нафтова вишка", "source": "translation-pack" },
+        "or_power_electric": { "en": "Oil rig onboard generator", "uk": "Бортовий генератор нафтової вежі", "source": "translation-pack" },
+        "or_radar": { "en": "Oil rig radar", "uk": "Радар нафтової вежі", "source": "translation-pack" },
+        "or_pole": { "en": "Oil rig power pole", "uk": "Силова опора нафтової вежі", "source": "translation-pack" },
+        "or_tank": { "en": "Oil rig storage tank", "uk": "Резервуар нафтової вежі", "source": "translation-pack" },
+        "or_reactor": { "en": "Oil rig pump heater", "uk": "Нагрівач помпи нафтової вишки", "source": "translation-pack" },
+        "offshore-oil": { "en": "Offshore oil", "uk": "Морська нафта", "source": "translation-pack" }
+      },
+      "technology-name": {
+        "deep_sea_oil_extraction": { "en": "Deep sea oil extraction", "uk": "Глибоководний видобуток нафти", "source": "translation-pack" }
       }
     },
     "Cold_biters": {
@@ -2621,6 +2690,24 @@
         "companion-roboport-mk1": { "en": "Companion Roboport MK1", "uk": "Робопорт компаньйона MK1", "source": "translation-pack" },
         "companion-roboport-mk2": { "en": "Companion Roboport MK2", "uk": "Робопорт компаньйона MK2", "source": "translation-pack" },
         "companion-roboport-mk3": { "en": "Companion Roboport MK3", "uk": "Робопорт компаньйона MK3", "source": "translation-pack" }
+      }
+    },
+    "Construction_Drones_Forked": {
+      "title": "Updated Construction Drones - Forked",
+      "entity-name": {
+        "normal-Construction_Drone": { "en": "Construction Drone", "uk": "Кубічний друг", "source": "translation-pack" },
+        "uncommon-Construction_Drone": { "en": "Construction Drone", "uk": "Будівельний дрон", "source": "translation-pack" },
+        "rare-Construction_Drone": { "en": "Construction Drone", "uk": "Будівельний дрон", "source": "translation-pack" },
+        "epic-Construction_Drone": { "en": "Construction Drone", "uk": "Будівельний дрон", "source": "translation-pack" },
+        "legendary-Construction_Drone": { "en": "Construction Drone", "uk": "Будівельний дрон", "source": "translation-pack" },
+        "normal-Construction_Drone_spectral": { "en": "Construction Drone", "uk": "Будівельний дрон", "source": "translation-pack" },
+        "uncommon-Construction_Drone_spectral": { "en": "Construction Drone", "uk": "Будівельний дрон", "source": "translation-pack" },
+        "rare-Construction_Drone_spectral": { "en": "Construction Drone", "uk": "Будівельний дрон", "source": "translation-pack" },
+        "epic-Construction_Drone_spectral": { "en": "Construction Drone", "uk": "Будівельний дрон", "source": "translation-pack" },
+        "legendary-Construction_Drone_spectral": { "en": "Construction Drone", "uk": "Будівельний дрон", "source": "translation-pack" }
+      },
+      "technology-name": {
+        "spectral-drones": { "en": "Spectral Drones", "uk": "Спектральні дрони", "source": "translation-pack" }
       }
     },
     "Constructron-Continued": {
@@ -2933,15 +3020,6 @@
         "fi-area-tool": { "en": "Area analysis tool", "uk": "Інструмент аналізу області", "source": "translation-pack" }
       }
     },
-    "factoryplanner": {
-      "title": "Factory Planner",
-      "item-name": {
-        "fp_beacon_selector": { "en": "Beacon Selector", "uk": "Вибір маяка", "source": "translation-pack" }
-      },
-      "fuel-category-name": {
-        "fluid-fuel": { "en": "Fluid Fuel", "uk": "Рідке паливо", "source": "translation-pack" }
-      }
-    },
     "factory-planning-room": {
       "title": "Factory Planning Room",
       "item-name": {
@@ -3047,8 +3125,51 @@
         "signal-heli-fuel-warning-critical": { "en": "Critical fuel", "uk": "Критично мало палива", "source": "translation-pack" }
       }
     },
+    "Hovercrafts": {
+      "title": "Hovercrafts",
+      "entity-name": {
+        "hovercraft": { "en": "Hovercraft", "uk": "Ховеркрафт", "source": "translation-pack" },
+        "electric-hovercraft": { "en": "Electric hovercraft", "uk": "Електричний ховеркрафт", "source": "translation-pack" },
+        "missile-hovercraft": { "en": "Missile hovercraft", "uk": "Ракетний ховеркрафт", "source": "translation-pack" },
+        "laser-hovercraft": { "en": "Laser hovercraft", "uk": "Лазерний ховеркрафт", "source": "translation-pack" },
+        "hovercraft-laser-beam": { "en": "Hovercraft laser turret", "uk": "Лазерна турель ховеркрафта", "source": "translation-pack" }
+      },
+      "fuel-category-name": {
+        "electrical": { "en": "Electrical", "uk": "Джерело електроенергії", "source": "translation-pack" }
+      },
+      "item-name": {
+        "hovercraft": { "en": "Hovercraft", "uk": "Ховеркрафт", "source": "translation-pack" },
+        "electric-hovercraft": { "en": "Electric hovercraft", "uk": "Електричний ховеркрафт", "source": "translation-pack" },
+        "missile-hovercraft": { "en": "Missile hovercraft", "uk": "Ракетний ховеркрафт", "source": "translation-pack" },
+        "laser-hovercraft": { "en": "Laser hovercraft", "uk": "Лазерний ховеркрафт", "source": "translation-pack" },
+        "hovercraft-missile-turret": { "en": "Missile turret", "uk": "Ракетна турель", "source": "translation-pack" },
+        "hovercraft-laser-gun": { "en": "Hovercraft laser turret", "uk": "Лазерна турель ховеркрафта", "source": "translation-pack" },
+        "hovercraft-laser-ammo": { "en": "Hovercraft laser charge", "uk": "Лазерний заряд ховеркрафта", "source": "translation-pack" },
+        "ehvt-equipment": { "en": "Extra high voltage transformer", "uk": "Надвисоковольтний трансформатор", "source": "translation-pack" },
+        "lcraft-charger": { "en": "Laser hovercraft weapon charger", "uk": "Зарядник зброї лазерного ховеркрафта", "source": "translation-pack" }
+      },
+      "technology-name": {
+        "hovercraft": { "en": "Hovercraft", "uk": "Ховеркрафт", "source": "translation-pack" },
+        "electric-hovercraft": { "en": "Electric hovercraft", "uk": "Електричний ховеркрафт", "source": "translation-pack" },
+        "missile-hovercraft": { "en": "Missile hovercraft", "uk": "Ракетний ховеркрафт", "source": "translation-pack" },
+        "laser-hovercraft": { "en": "Laser hovercraft", "uk": "Лазерний ховеркрафт", "source": "translation-pack" },
+        "ehvt-equipment": { "en": "Extra high voltage transformer", "uk": "Надвисоковольтний трансформатор", "source": "translation-pack" }
+      },
+      "recipe-name": {
+        "hovercraft": { "en": "Hovercraft", "uk": "Ховеркрафт", "source": "translation-pack" },
+        "electric-hovercraft": { "en": "Electric hovercraft", "uk": "Електричний ховеркрафт", "source": "translation-pack" },
+        "missile-hovercraft": { "en": "Missile hovercraft", "uk": "Ракетний ховеркрафт", "source": "translation-pack" },
+        "laser-hovercraft": { "en": "Laser hovercraft", "uk": "Лазерний ховеркрафт", "source": "translation-pack" },
+        "ehvt-equipment": { "en": "Extra high voltage transformer", "uk": "Надвисоковольтний трансформатор", "source": "translation-pack" },
+        "lcraft-charger": { "en": "Laser hovercraft weapon charger", "uk": "Зарядник зброї лазерного ховеркрафта", "source": "translation-pack" }
+      },
+      "equipment-name": {
+        "ehvt-equipment": { "en": "Extra high voltage transformer", "uk": "Надвисоковольтний трансформатор", "source": "translation-pack" },
+        "lcraft-charger": { "en": "Laser hovercraft weapon charger", "uk": "Зарядник зброї лазерного ховеркрафта", "source": "translation-pack" }
+      }
+    },
     "informatron": {
-      "title": "InformaTron",
+      "title": "Informatron",
       "virtual-signal-name": {
         "informatron": { "en": "InformaTron", "uk": "InformaTron", "source": "official" }
       }
@@ -3716,12 +3837,6 @@
         "ltn-disable-warnings": { "en": "Disable Warning Messages", "uk": "Вимкнути попередження", "source": "translation-pack" }
       }
     },
-    "LuaCombPP": {
-      "title": "LuaComb++",
-      "technology-name": {
-        "luacombpp-combinator-tech": { "en": "Programmable combinator", "uk": "Програмований комбінатор", "source": "translation-pack" }
-      }
-    },
     "mining-patch-planner": {
       "title": "Mining Patch Planner",
       "item-name": {
@@ -3731,7 +3846,54 @@
     "ModuleInserterSimplified": {
       "title": "Module Inserter Simplified",
       "item-name": {
-        "remove-modules": { "en": "Remove modules", "uk": "Видалити модуль", "source": "translation-pack" }
+        "remove-modules": { "en": "Remove modules", "uk": "Вилучати модулі", "source": "translation-pack" }
+      }
+    },
+    "Nanobots3": {
+      "title": "Nanobots: Early Bots 3.0",
+      "item-name": {
+        "gun-nano-emitter": { "en": "Nano emitter", "uk": "Нано-емітер", "source": "translation-pack" },
+        "ammo-nano-termites": { "en": "Nanobot termite bots", "uk": "Наноботи-терміти", "source": "translation-pack" },
+        "ammo-nano-scrappers": { "en": "Nanobot scrapper bots", "uk": "Наноботи-утилізатори", "source": "translation-pack" },
+        "ammo-nano-constructors": { "en": "Nanobot construction bots", "uk": "Наноботи-будівельники", "source": "translation-pack" },
+        "ammo-nano-deconstructors": { "en": "Nanobot deconstruction bots", "uk": "Наноботи-розбирачі", "source": "translation-pack" },
+        "roboport-interface-main": { "en": "Logistic network interface", "uk": "Інтерфейс логістичної мережі", "source": "translation-pack" },
+        "equipment-bot-chip-nanointerface": { "en": "Nanobot logistic interface", "uk": "Логістичний інтерфейс наноботів", "source": "translation-pack" }
+      },
+      "ammo-category-name": {
+        "nano-ammo": { "en": "Nano Ammo", "uk": "Нано-боєприпаси", "source": "translation-pack" }
+      },
+      "virtual-signal-name": {
+        "nano-signal-chop-trees": { "en": "Roboport Interface\\nMark trees for deconstruction\\nSet to negative amount to only chop trees until\\nthat much raw wood is in the network.", "uk": "Інтерфейс робопорта\\nПозначити дерева на розбір\\nНегативне значення — рубати дерева,\\nпоки в мережі не буде\\nстільки сирої деревини.", "source": "translation-pack" },
+        "nano-signal-item-on-ground": { "en": "Roboport Interface\\nMark items on ground", "uk": "Інтерфейс робопорта\\nПозначити предмети на землі", "source": "translation-pack" },
+        "nano-signal-closest-roboport": { "en": "Roboport Interface\\nOnly run signals on the closest\\nroboport in range", "uk": "Інтерфейс робопорта\\nВиконувати сигнали лише на\\nнайближчому робопорті в радіусі", "source": "translation-pack" },
+        "nano-signal-deconstruct-finished-miners": { "en": "Roboport Interface\\nDeconstruct finished miners", "uk": "Інтерфейс робопорта\\nРозбирати завершені бури", "source": "translation-pack" },
+        "nano-signal-landfill-the-world": { "en": "Roboport Interface\\nFill in all water with landfill\\nSet to negative amount to keep\\nthat much landfill in the network", "uk": "Інтерфейс робопорта\\nЗасипати всю воду ґрунтом\\nНегативне значення — тримати\\nу мережі стільки ґрунту", "source": "translation-pack" },
+        "nano-signal-catch-fish": { "en": "Roboport Interface\\nFind all the fish\\nFish are good, Fish are great", "uk": "Інтерфейс робопорта\\nЗнайти всю рибу\\nРиба добра, риба чудова", "source": "translation-pack" },
+        "nano-signal-build-tiles": { "en": "Roboport Interface\\nBuild Tiles\\nAdd a tile signal as the next signal\\nto build that type of tile\\nSet to negative amount to only build\\nif at least that many are\\nin the network.", "uk": "Інтерфейс робопорта\\nБудувати плитки\\nДодайте сигнал плитки як наступний\\nдля будівництва цього типу\\nНегативне значення — будувати лише\\nякщо в мережі є мінімум\\nстільки.", "source": "translation-pack" },
+        "nano-signal-smarter-charging": { "en": "Roboport Interface\\nSmarter Bot Charging\\nPeriodically forces some robots to find new charging spots.", "uk": "Інтерфейс робопорта\\nРозумна зарядка\\nПеріодично змушує деяких роботів\\nшукати нові місця зарядки.", "source": "translation-pack" },
+        "nano-signal-upgrade-modules": { "en": "Roboport Interface\\nModule Upgrader\\nSwaps out lower tier modules for higher tier versions.", "uk": "Інтерфейс робопорта\\nАпгрейд модулів\\nЗмінює модулі нижчого рівня\\nна вищий.", "source": "translation-pack" },
+        "nano-signal-refill-turrets": { "en": "Roboport Interface\\nRefill Turrets\\nSet to positive amount to fill turrets up with ammo.", "uk": "Інтерфейс робопорта\\nПоповнити турелі\\nПозитивне значення — поповнювати\\nтурелі боєприпасами.", "source": "translation-pack" }
+      },
+      "equipment-name": {
+        "equipment-bot-chip-items": { "en": "Automatic item retriever", "uk": "Автопідбір предметів", "source": "translation-pack" },
+        "equipment-bot-chip-trees": { "en": "Automatic tree cutter", "uk": "Авторубка дерев", "source": "translation-pack" },
+        "equipment-bot-chip-launcher": { "en": "Automatic unit launcher", "uk": "Автозапуск юнітів", "source": "translation-pack" },
+        "equipment-bot-chip-feeder": { "en": "Automatic health feeder", "uk": "Автолікування", "source": "translation-pack" },
+        "equipment-bot-chip-nanointerface": { "en": "Nanobot logistic interface", "uk": "Логістичний інтерфейс наноботів", "source": "translation-pack" }
+      },
+      "entity-name": {
+        "nano-proxy-health": { "en": "Nanobot target proxy", "uk": "Проксі-ціль нанобота", "source": "translation-pack" },
+        "roboport-interface-main": { "en": "Logistic Network Interface", "uk": "Інтерфейс логістичної мережі", "source": "translation-pack" },
+        "roboport-interface-scanner": { "en": "Interface Scanner", "uk": "Сканер інтерфейсу", "source": "translation-pack" },
+        "roboport-interface-cc": { "en": "Interface Programmer", "uk": "Програматор інтерфейсу", "source": "translation-pack" }
+      },
+      "technology-name": {
+        "nanobots": { "en": "Nanobots", "uk": "Наноботи", "source": "translation-pack" },
+        "nanobots-cliff": { "en": "Nano Explosives", "uk": "Нано-вибухівка", "source": "translation-pack" },
+        "nano-range": { "en": "Nanobot Range", "uk": "Дальність наноботів", "source": "translation-pack" },
+        "nano-speed": { "en": "Nanobot Speed", "uk": "Швидкість наноботів", "source": "translation-pack" },
+        "roboport-interface": { "en": "Logistic Network Interfacing", "uk": "Інтерфейс логістичної мережі", "source": "translation-pack" }
       }
     },
     "neural-spider-control": {
@@ -3769,6 +3931,70 @@
         "pollution-signal": { "en": "Pollution", "uk": "Забруднення", "source": "translation-pack" }
       }
     },
+    "port-crane-loader": {
+      "title": "Port Crane bulk loader and unloader",
+      "item-name": {
+        "port-crane": { "en": "Port crane", "uk": "Портовий кран", "source": "translation-pack" }
+      },
+      "entity-name": {
+        "port-crane": { "en": "Port crane", "uk": "Портовий кран", "source": "translation-pack" }
+      },
+      "recipe-name": {
+        "port-crane": { "en": "Port crane", "uk": "Портовий кран", "source": "translation-pack" }
+      }
+    },
+    "Powered_Concrete": {
+      "title": "Powered Concrete",
+      "entity-name": {
+        "powered-tile": { "en": "Powered Tile", "uk": "Живильна плитка", "source": "translation-pack" }
+      },
+      "tile-name": {
+        "powered-kr-black-reinforced-plate": { "en": "Powered Black Reinforced Plate", "uk": "Живильна чорна армована плита", "source": "translation-pack" },
+        "powered-kr-white-reinforced-plate": { "en": "Powered White Reinforced Plate", "uk": "Живильна світла армована плита", "source": "translation-pack" },
+        "powered-kr-black-reinforced-plate-l": { "en": "Powered Black Reinforced Plate", "uk": "Живильна чорна армована плита", "source": "translation-pack" },
+        "powered-kr-white-reinforced-plate-l": { "en": "Powered White Reinforced Plate", "uk": "Живильна світла армована плита", "source": "translation-pack" },
+        "powered-concrete": { "en": "Powered Concrete", "uk": "Живильний бетон", "source": "translation-pack" },
+        "powered-hazard-concrete-left": { "en": "Powered Hazard Concrete", "uk": "Живильний бетон з розміткою", "source": "translation-pack" },
+        "powered-hazard-concrete-right": { "en": "Powered Hazard Concrete", "uk": "Живильний бетон з розміткою", "source": "translation-pack" },
+        "powered-refined-concrete": { "en": "Powered Refined Concrete", "uk": "Живильний залізобетон", "source": "translation-pack" },
+        "powered-refined-hazard-concrete-left": { "en": "Powered Refined Hazard Concrete", "uk": "Живильний залізобетон з розміткою", "source": "translation-pack" },
+        "powered-refined-hazard-concrete-right": { "en": "Powered Refined Hazard Concrete", "uk": "Живильний залізобетон з розміткою", "source": "translation-pack" }
+      },
+      "item-name": {
+        "powered-kr-black-reinforced-plate": { "en": "Powered Black Reinforced Plate", "uk": "Живильна чорна армована плита", "source": "translation-pack" },
+        "powered-kr-white-reinforced-plate": { "en": "Powered White Reinforced Plate", "uk": "Живильна світла армована плита", "source": "translation-pack" },
+        "powered-kr-black-reinforced-plate-l": { "en": "Powered Black Reinforced Plate", "uk": "Живильна чорна армована плита", "source": "translation-pack" },
+        "powered-kr-white-reinforced-plate-l": { "en": "Powered White Reinforced Plate", "uk": "Живильна світла армована плита", "source": "translation-pack" },
+        "powered-concrete": { "en": "Powered Concrete", "uk": "Живильний бетон", "source": "translation-pack" },
+        "powered-hazard-concrete": { "en": "Powered Hazard Concrete", "uk": "Живильний бетон з розміткою", "source": "translation-pack" },
+        "powered-refined-concrete": { "en": "Powered Refined Concrete", "uk": "Живильний залізобетон", "source": "translation-pack" },
+        "powered-refined-hazard-concrete": { "en": "Powered Refined Hazard Concrete", "uk": "Живильний залізобетон з розміткою", "source": "translation-pack" }
+      },
+      "recipe-name": {
+        "powered-kr-black-reinforced-plate": { "en": "Powered Black Reinforced Plate", "uk": "Живильна чорна армована плита", "source": "translation-pack" },
+        "powered-kr-white-reinforced-plate": { "en": "Powered White Reinforced Plate", "uk": "Живильна світла армована плита", "source": "translation-pack" },
+        "powered-kr-black-reinforced-plate-l": { "en": "Powered Black Reinforced Plate", "uk": "Живильна чорна армована плита", "source": "translation-pack" },
+        "powered-kr-white-reinforced-plate-l": { "en": "Powered White Reinforced Plate", "uk": "Живильна світла армована плита", "source": "translation-pack" },
+        "unpowered-kr-black-reinforced-plate": { "en": "Unpowered Black Reinforced Plate", "uk": "Чорна армована плита без живлення", "source": "translation-pack" },
+        "unpowered-kr-white-reinforced-plate": { "en": "Unpowered White Reinforced Plate", "uk": "Світла армована плита без живлення", "source": "translation-pack" },
+        "unpowered-kr-black-reinforced-plate-l": { "en": "Unpowered Black Reinforced Plate", "uk": "Чорна армована плита без живлення", "source": "translation-pack" },
+        "unpowered-kr-white-reinforced-plate-l": { "en": "Unpowered White Reinforced Plate", "uk": "Світла армована плита без живлення", "source": "translation-pack" },
+        "powered-concrete": { "en": "Powered Concrete", "uk": "Живильний бетон", "source": "translation-pack" },
+        "powered-hazard-concrete": { "en": "Powered Hazard Concrete", "uk": "Живильний бетон з розміткою", "source": "translation-pack" },
+        "powered-refined-concrete": { "en": "Powered Refined Concrete", "uk": "Живильний залізобетон", "source": "translation-pack" },
+        "powered-refined-hazard-concrete": { "en": "Powered Refined Hazard Concrete", "uk": "Живильний залізобетон з розміткою", "source": "translation-pack" },
+        "unpowered-concrete": { "en": "Unpowered Concrete", "uk": "Бетон без живлення", "source": "translation-pack" },
+        "unpowered-hazard-concrete": { "en": "Unpowered Hazard Concrete", "uk": "Бетон з розміткою без живлення", "source": "translation-pack" },
+        "unpowered-refined-concrete": { "en": "Unpowered Refined Concrete", "uk": "Залізобетон без живлення", "source": "translation-pack" },
+        "unpowered-refined-hazard-concrete": { "en": "Unpowered Refined Hazard Concrete", "uk": "Залізобетон з розміткою без живлення", "source": "translation-pack" },
+        "unhazarded-concrete": { "en": "Remove Concrete Hazard Markings", "uk": "Прибрати розмітку з бетону", "source": "translation-pack" },
+        "unhazarded-refined-concrete": { "en": "Remove Refined Concrete Hazard Markings", "uk": "Прибрати розмітку із залізобетону", "source": "translation-pack" },
+        "unhazarded-powered-concrete": { "en": "Remove Powered Concrete Hazard Markings", "uk": "Прибрати розмітку з живильного бетону", "source": "translation-pack" },
+        "unhazarded-powered-refined-concrete": { "en": "Remove Powered Refined Concrete Hazard Markings", "uk": "Прибрати розмітку з живильного залізобетону", "source": "translation-pack" },
+        "hazarded-powered-concrete": { "en": "Add Powered Concrete Hazard Markings", "uk": "Нанести розмітку на живильний бетон", "source": "translation-pack" },
+        "hazarded-powered-refined-concrete": { "en": "Add Powered Refined Concrete Hazard Markings", "uk": "Нанести розмітку на живильний залізобетон", "source": "translation-pack" }
+      }
+    },
     "RateCalculator": {
       "title": "Rate Calculator",
       "item-name": {
@@ -3776,6 +4002,24 @@
         "rcalc-pollution-dummy": { "en": "Pollution", "uk": "Забруднення", "source": "translation-pack" },
         "rcalc-power-dummy": { "en": "Power", "uk": "Живлення", "source": "translation-pack" },
         "rcalc-selection-tool": { "en": "Rate Calculator selector", "uk": "Селектор вимірів", "source": "translation-pack" }
+      }
+    },
+    "real-rain": {
+      "title": "Real Rain",
+      "entity-name": {
+        "real-rain-pollution-cleaner": { "en": "Rain washout", "uk": "Вимивання дощем", "source": "translation-pack" },
+        "real-rain-fire-marker": { "en": "Rain fire marker", "uk": "Маркер пожежі для дощу", "source": "translation-pack" }
+      }
+    },
+    "real-smoke": {
+      "title": "Real Smoke",
+      "entity-name": {
+        "real-smoke-light": { "en": "Light real smoke", "uk": "Легкий дим", "source": "translation-pack" },
+        "real-smoke-industrial": { "en": "Industrial real smoke", "uk": "Промисловий дим", "source": "translation-pack" },
+        "real-smoke-soot": { "en": "Soot real smoke", "uk": "Сажовий дим", "source": "translation-pack" },
+        "real-smoke-heavy": { "en": "Heavy real smoke", "uk": "Густий дим", "source": "translation-pack" },
+        "real-smoke-exhaust": { "en": "Exhaust real smoke", "uk": "Вихлопний дим", "source": "translation-pack" },
+        "real-smoke-blast": { "en": "Blast real smoke", "uk": "Дим вибуху", "source": "translation-pack" }
       }
     },
     "robot_attrition": {
@@ -3823,11 +4067,59 @@
         "shield-projection": { "en": "Shield projection", "uk": "Проєкція щита", "source": "translation-pack" }
       }
     },
+    "small-fast-boats": {
+      "title": "Small Fast Boats",
+      "item-name": {
+        "small-fast-boats-ski-boat": { "en": "Ski boat", "uk": "Буксирувальний катер", "source": "translation-pack" },
+        "small-fast-boats-go-fast-boat": { "en": "Go-fast boat", "uk": "Швидкісний катер", "source": "translation-pack" },
+        "small-fast-boats-racing-catamaran": { "en": "Racing catamaran", "uk": "Гоночний катамаран", "source": "translation-pack" },
+        "small-fast-boats-hydroplane": { "en": "Hydroplane", "uk": "Глісер", "source": "translation-pack" },
+        "small-fast-boats-ski-boat-engine": { "en": "Ski boat engine", "uk": "Двигун буксирувального катера", "source": "translation-pack" },
+        "small-fast-boats-go-fast-boat-engine": { "en": "Go-fast boat engine", "uk": "Двигун швидкісного катера", "source": "translation-pack" },
+        "small-fast-boats-racing-catamaran-engine": { "en": "Racing catamaran engine", "uk": "Двигун гоночного катамарана", "source": "translation-pack" },
+        "small-fast-boats-hydroplane-engine": { "en": "Hydroplane engine", "uk": "Двигун глісера", "source": "translation-pack" }
+      },
+      "entity-name": {
+        "small-fast-boats-ski-boat": { "en": "Ski boat", "uk": "Буксирувальний катер", "source": "translation-pack" },
+        "small-fast-boats-ski-boat-rail": { "en": "Ski boat (waterway)", "uk": "Буксирувальний катер (водний шлях)", "source": "translation-pack" },
+        "small-fast-boats-ski-boat-engine": { "en": "Ski boat engine", "uk": "Двигун буксирувального катера", "source": "translation-pack" },
+        "small-fast-boats-go-fast-boat": { "en": "Go-fast boat", "uk": "Швидкісний катер", "source": "translation-pack" },
+        "small-fast-boats-go-fast-boat-rail": { "en": "Go-fast boat (waterway)", "uk": "Швидкісний катер (водний шлях)", "source": "translation-pack" },
+        "small-fast-boats-go-fast-boat-engine": { "en": "Go-fast boat engine", "uk": "Двигун швидкісного катера", "source": "translation-pack" },
+        "small-fast-boats-racing-catamaran": { "en": "Racing catamaran", "uk": "Гоночний катамаран", "source": "translation-pack" },
+        "small-fast-boats-racing-catamaran-rail": { "en": "Racing catamaran (waterway)", "uk": "Гоночний катамаран (водний шлях)", "source": "translation-pack" },
+        "small-fast-boats-racing-catamaran-engine": { "en": "Racing catamaran engine", "uk": "Двигун гоночного катамарана", "source": "translation-pack" },
+        "small-fast-boats-hydroplane": { "en": "Hydroplane", "uk": "Глісер", "source": "translation-pack" },
+        "small-fast-boats-hydroplane-rail": { "en": "Hydroplane (waterway)", "uk": "Глісер (водний шлях)", "source": "translation-pack" },
+        "small-fast-boats-hydroplane-engine": { "en": "Hydroplane engine", "uk": "Двигун глісера", "source": "translation-pack" }
+      },
+      "recipe-name": {
+        "small-fast-boats-ski-boat": { "en": "Ski boat", "uk": "Буксирувальний катер", "source": "translation-pack" },
+        "small-fast-boats-go-fast-boat": { "en": "Go-fast boat", "uk": "Швидкісний катер", "source": "translation-pack" },
+        "small-fast-boats-racing-catamaran": { "en": "Racing catamaran", "uk": "Гоночний катамаран", "source": "translation-pack" },
+        "small-fast-boats-hydroplane": { "en": "Hydroplane", "uk": "Глісер", "source": "translation-pack" }
+      },
+      "technology-name": {
+        "small-fast-boats-ski-boat": { "en": "Ski boat", "uk": "Буксирувальний катер", "source": "translation-pack" },
+        "small-fast-boats-go-fast-boat": { "en": "Go-fast boat", "uk": "Швидкісний катер", "source": "translation-pack" },
+        "small-fast-boats-racing-catamaran": { "en": "Racing catamaran", "uk": "Гоночний катамаран", "source": "translation-pack" },
+        "small-fast-boats-hydroplane": { "en": "Hydroplane", "uk": "Глісер", "source": "translation-pack" }
+      }
+    },
     "smart-enemy-ai": {
       "title": "Smart Enemies",
       "entity-name": {
         "smart-enemy-ai-target-arithmetic-combinator": { "en": "Adaptive target multiplier", "uk": "Адаптивний множник цілей", "source": "translation-pack" },
         "smart-enemy-ai-target-constant-combinator": { "en": "Adaptive target mask", "uk": "Адаптивна маска цілей", "source": "translation-pack" }
+      }
+    },
+    "snouz-handcannon": {
+      "title": "Handcannon",
+      "item-name": {
+        "handcannon": { "en": "Handcannon", "uk": "Ручна гармата", "source": "translation-pack" }
+      },
+      "technology-name": {
+        "handcannon": { "en": "Handcannon", "uk": "Ручна гармата", "source": "translation-pack" }
       }
     },
     "space-exploration": {
@@ -4072,8 +4364,7 @@
         "se-core-seam": { "en": "Core seam", "uk": "Пласт ядра", "source": "translation-pack" },
         "se-core-seam-type": { "en": "Core seam (__1__)", "uk": "Пласт ядра (__1__)", "source": "translation-pack" },
         "se-big-turbine": { "en": "High temperature turbine generator", "uk": "Високотемпературна турбіна-генератор", "source": "translation-pack" },
-        "se-big-turbine-generator-NW": { "en": "High temperature turbine generator", "uk": "Високотемпературна турбіна-генератор", "source": "translation-pack" },
-        "se-big-turbine-generator-SE": { "en": "High temperature turbine generator", "uk": "Високотемпературна турбіна-генератор", "source": "translation-pack" },
+        "se-big-turbine-generator": { "en": "High termpature turbine generator", "uk": "Високотемпературний турбогенератор", "source": "translation-pack" },
         "se-big-turbine-tank": { "en": "High temperature turbine generator", "uk": "Високотемпературна турбіна-генератор", "source": "translation-pack" },
         "se-big-heat-exchanger": { "en": "High temperature heat exchanger", "uk": "Високотемпературний теплообмінник", "source": "translation-pack" },
         "se-blueprint-registration-point": { "en": "Blueprint registration point", "uk": "Пункт реєстрації креслень", "source": "translation-pack" },
@@ -4085,9 +4376,7 @@
         "se-delivery-cannon-weapon-settings": { "en": "Weapons delivery cannon", "uk": "Гарматна доставочна гармата", "source": "translation-pack" },
         "se-delivery-cannon-weapon-energy-interface": { "en": "Weapons delivery cannon", "uk": "Гарматна доставочна гармата", "source": "translation-pack" },
         "se-spaceship-clamp": { "en": "Spaceship clamp", "uk": "Затискач космічного корабля", "source": "translation-pack" },
-        "se-spaceship-clamp-place": { "en": "Spaceship clamp", "uk": "Затискач космічного корабля", "source": "translation-pack" },
-        "se-spaceship-clamp-power-pole-external-east": { "en": "Spaceship clamp wire pass-through", "uk": "Прохідний провід затискача космічного корабля", "source": "translation-pack" },
-        "se-spaceship-clamp-power-pole-external-west": { "en": "Spaceship clamp wire pass-through", "uk": "Прохідний провід затискача космічного корабля", "source": "translation-pack" },
+        "se-spaceship-clamp-power-pole-external": { "en": "Spaceship clamp wire pass-through", "uk": "Прохідний провід затискача космічного корабля", "source": "translation-pack" },
         "se-bloater-pool-cloud": { "en": "Bloatburst pool", "uk": "Заражаюча калюжа", "source": "translation-pack" },
         "se-bloater-burst": { "en": "Bloatburst explosion (__1__)", "uk": "Вибух роздутого (__1__)", "source": "translation-pack" },
         "se-energy-beam": { "en": "Energy beam", "uk": "Енергетичний промінь", "source": "translation-pack" },
@@ -4124,9 +4413,7 @@
         "kr-atmospheric-condenser-_-waterless": { "en": "Atmospheric condenser (waterless)", "uk": "Атмосферний конденсатор (без води)", "source": "translation-pack" },
         "kr-antimatter-reactor": { "en": "Singularity reactor", "uk": "Реактор на антиматерії", "source": "translation-pack" },
         "se-kr-big-fuel-refinery": { "en": "Big fuel refinery", "uk": "Великий паливний завод", "source": "translation-pack" },
-        "se-kr-advanced-condenser-turbine": { "en": "Advanced condenser turbine", "uk": "Вдосконалена конденсаційна турбіна", "source": "translation-pack" },
-        "se-kr-advanced-condenser-turbine-tank": { "en": "Advanced condenser turbine", "uk": "Вдосконалена конденсаційна турбіна", "source": "translation-pack" },
-        "se-kr-advanced-condenser-turbine-generator": { "en": "Advanced condenser turbine", "uk": "Вдосконалена конденсаційна турбіна", "source": "translation-pack" }
+        "se-kr-advanced-condenser-turbine": { "en": "Advanced condenser turbine", "uk": "Вдосконалена конденсаційна турбіна", "source": "translation-pack" }
       },
       "equipment-name": {
         "energy-shield-equipment": { "en": "Energy shield", "uk": "Енергетичний щит", "source": "translation-pack" },
@@ -4757,7 +5044,6 @@
         "se-bio-sludge-from-biomass": { "en": "Biosludge from biomatter", "uk": "Біошлам з біомаси", "source": "translation-pack" },
         "se-kr-dirty-water-filtration-iridium": { "en": "Filter dirty water [item=se-iridium-ore-crushed]", "uk": "Фільтрація брудної води [item=se-iridium-ore-crushed]", "source": "translation-pack" },
         "se-kr-dirty-water-filtration-holmium": { "en": "Filter dirty water [item=se-holmium-ore-crushed]", "uk": "Фільтрація брудної води [item=se-holmium-ore-crushed]", "source": "translation-pack" },
-        "singularity-tech-card-alt": { "en": "Singularity tech card", "uk": "Сингулярна технологічна картка", "source": "translation-pack" },
         "se-kr-matter-synthesis-data": { "en": "Matter synthesis data", "uk": "Дані синтезу матерії", "source": "translation-pack" },
         "se-kr-matter-containment-data": { "en": "Matter containment data", "uk": "Дані утримання матерії", "source": "translation-pack" },
         "se-kr-matter-liberation-data": { "en": "Matter liberation data", "uk": "Дані вивільнення матерії", "source": "translation-pack" },
@@ -5099,7 +5385,7 @@
       "title": "Spidertron Enhancements",
       "entity-name": {
         "spidertron-enhancements-dummy-spidertron": { "en": "Travelling __1__", "uk": "Подорожую __1__", "source": "translation-pack" },
-        "spidertron-enhancements-corpse": { "en": "__1__ corpse", "uk": "Труп Спайдертрона", "source": "translation-pack" }
+        "spidertron-enhancements-corpse": { "en": "__1__ corpse", "uk": "Рештки: __1__", "source": "translation-pack" }
       },
       "item-name": {
         "spe-spidertron-remote": { "en": "__1__ remote", "uk": "Пульт: __1__", "source": "translation-pack" }
@@ -5244,6 +5530,28 @@
         "toxic": { "en": "Toxic", "uk": "Токсична", "source": "translation-pack" }
       }
     },
+    "turret_xp": {
+      "title": "Turret XP",
+      "entity-name": {
+        "turret-xp-veteran-feeder": { "en": "Veteran Core feeder", "uk": "Живильник ядра ветерана", "source": "translation-pack" },
+        "turret-xp-label-panel-gold": { "en": "Veteran Core label", "uk": "Мітка ядра ветерана", "source": "translation-pack" },
+        "turret-xp-label-panel-white": { "en": "Veteran Core label", "uk": "Мітка ядра ветерана", "source": "translation-pack" },
+        "turret-xp-label-panel-green": { "en": "Veteran Core label", "uk": "Мітка ядра ветерана", "source": "translation-pack" },
+        "turret-xp-label-panel-blue": { "en": "Veteran Core label", "uk": "Мітка ядра ветерана", "source": "translation-pack" },
+        "turret-xp-label-panel-red": { "en": "Veteran Core label", "uk": "Мітка ядра ветерана", "source": "translation-pack" },
+        "turret-xp-label-panel-purple": { "en": "Veteran Core label", "uk": "Мітка ядра ветерана", "source": "translation-pack" },
+        "turret-xp-electric-arc": { "en": "Veteran electric arc", "uk": "Електричний розряд ветерана", "source": "translation-pack" },
+        "turret-xp-fire-flash": { "en": "Veteran fire flash", "uk": "Вогняний спалах ветерана", "source": "translation-pack" },
+        "turret-xp-bound-gun-turret-placeholder": { "en": "Bound veteran gun turret", "uk": "Прив'язана кулеметна турель-ветеран", "source": "translation-pack" }
+      },
+      "item-name": {
+        "turret-xp-veteran-core": { "en": "Veteran Core", "uk": "Ядро ветерана", "source": "translation-pack" },
+        "turret-xp-bound-gun-turret": { "en": "Bound veteran gun turret", "uk": "Прив'язана кулеметна турель-ветеран", "source": "translation-pack" }
+      },
+      "recipe-name": {
+        "turret-xp-veteran-core": { "en": "Veteran Core", "uk": "Ядро ветерана", "source": "translation-pack" }
+      }
+    },
     "UPSFriendlyNixieTubeDisplay": {
       "title": "UPS Friendly Nixie Tubes",
       "entity-name": {
@@ -5274,12 +5582,37 @@
       }
     },
     "zithorian-extra-storage-tanks-port": {
-      "title": "Zithorian's Extra Storage Tanks for 2.0",
+      "title": "Zithorian's Extra Storage Tanks for 2.0+",
       "entity-name": {
         "zith-storage-tank-1x1": { "en": "1x1 Storage tank", "uk": "Резервуар 1x1", "source": "translation-pack" },
         "zith-storage-tank-2x2": { "en": "2x2 Storage tank", "uk": "Резервуар 2x2", "source": "translation-pack" },
         "zith-storage-tank-3x4": { "en": "3x4 Storage tank", "uk": "Резервуар 3x4", "source": "translation-pack" },
         "zith-storage-tank-5x5": { "en": "5x5 Storage tank", "uk": "Резервуар 5x5", "source": "translation-pack" }
+      }
+    },
+    "ArmouredBiters": {
+      "title": "Armoured Biters",
+      "notInstalled": true,
+      "entity-name": {
+        "small-armoured-biter": { "en": "Small Snapper", "uk": "Малий клацун", "source": "translation-pack" },
+        "small_armoured-corpse": { "en": "Small snapper corpse", "uk": "Труп малого клацуна", "source": "translation-pack" },
+        "medium-armoured-biter": { "en": "Medium Snapper", "uk": "Середній клацун", "source": "translation-pack" },
+        "medium-armoured-corpse": { "en": "Medium Snapper corpse", "uk": "Труп середнього клацуна", "source": "translation-pack" },
+        "big-armoured-biter": { "en": "Big Snapper", "uk": "Великий клацун", "source": "translation-pack" },
+        "big-armoured-corpse": { "en": "Big Snapper corpse", "uk": "Труп великого клацуна", "source": "translation-pack" },
+        "behemoth-armoured-biter": { "en": "Behemoth Snapper", "uk": "Гігантський клацун", "source": "translation-pack" },
+        "behemoth-armoured-corpse": { "en": "Behemoth Snapper corpse", "uk": "Труп гігантського клацуна", "source": "translation-pack" },
+        "armoured-biter-spawner": { "en": "Snapper Nest", "uk": "Гніздо клацунів", "source": "translation-pack" },
+        "armoured-biter-spawner-corpse": { "en": "Snapper Nest corpse", "uk": "Залишки гнізда клацунів", "source": "translation-pack" },
+        "leviathan-armoured-biter": { "en": "Leviathan Snapper", "uk": "Клацун-левіафан", "source": "translation-pack" },
+        "leviathan-armoured-corpse": { "en": "Leviathan Snapper corpse", "uk": "Труп клацуна-левіафана", "source": "translation-pack" }
+      }
+    },
+    "LuaCombPP": {
+      "title": "LuaComb++",
+      "notInstalled": true,
+      "technology-name": {
+        "luacombpp-combinator-tech": { "en": "Programmable combinator", "uk": "Програмований комбінатор", "source": "translation-pack" }
       }
     },
     "RateCalculatorPlus": {
@@ -5767,24 +6100,6 @@
         "carnova_enemy_base": { "en": "Carnova piranha spawning grounds", "uk": "Нерестовища піраній Карнови", "source": "translation-pack" },
         "bones": { "en": "Carnova bones", "uk": "Кістки Карнови", "source": "translation-pack" },
         "lymph": { "en": "Carnova lymph", "uk": "Лімфа Карнови", "source": "translation-pack" }
-      }
-    },
-    "ArmouredBiters21Compat": {
-      "title": "Armoured Biters (2.1 Compat)",
-      "notInstalled": true,
-      "entity-name": {
-        "small-armoured-biter": { "en": "Small Snapper", "uk": "Малий клацун", "source": "translation-pack" },
-        "small_armoured-corpse": { "en": "Small snapper corpse", "uk": "Труп малого клацуна", "source": "translation-pack" },
-        "medium-armoured-biter": { "en": "Medium Snapper", "uk": "Середній клацун", "source": "translation-pack" },
-        "medium-armoured-corpse": { "en": "Medium Snapper corpse", "uk": "Труп середнього клацуна", "source": "translation-pack" },
-        "big-armoured-biter": { "en": "Big Snapper", "uk": "Великий клацун", "source": "translation-pack" },
-        "big-armoured-corpse": { "en": "Big Snapper corpse", "uk": "Труп великого клацуна", "source": "translation-pack" },
-        "behemoth-armoured-biter": { "en": "Behemoth Snapper", "uk": "Гігантський клацун", "source": "translation-pack" },
-        "behemoth-armoured-corpse": { "en": "Behemoth Snapper corpse", "uk": "Труп гігантського клацуна", "source": "translation-pack" },
-        "armoured-biter-spawner": { "en": "Snapper Nest", "uk": "Гніздо клацунів", "source": "translation-pack" },
-        "armoured-biter-spawner-corpse": { "en": "Snapper Nest corpse", "uk": "Залишки гнізда клацунів", "source": "translation-pack" },
-        "leviathan-armoured-biter": { "en": "Leviathan Snapper", "uk": "Клацун-левіафан", "source": "translation-pack" },
-        "leviathan-armoured-corpse": { "en": "Leviathan Snapper corpse", "uk": "Труп клацуна-левіафана", "source": "translation-pack" }
       }
     },
     "bellicos-and-aegis": {
@@ -6330,25 +6645,6 @@
       "entity-name": {
         "condensing-agricultural-tower": { "en": "Condensing agricultural tower", "uk": "Конденсаційна сільськогосподарська вежа", "source": "translation-pack" },
         "hidden-condensing-agricultural-tower-tank": { "en": "Condensing agricultural tower tank", "uk": "Резервуар конденсаційної сільськогосподарської вежі", "source": "translation-pack" }
-      }
-    },
-    "Construction_Drones_Forked": {
-      "title": "Updated Construction Drones - Forked",
-      "notInstalled": true,
-      "entity-name": {
-        "normal-Construction_Drone": { "en": "Construction Drone", "uk": "Кубічний друг", "source": "translation-pack" },
-        "uncommon-Construction_Drone": { "en": "Construction Drone", "uk": "Будівельний дрон", "source": "translation-pack" },
-        "rare-Construction_Drone": { "en": "Construction Drone", "uk": "Будівельний дрон", "source": "translation-pack" },
-        "epic-Construction_Drone": { "en": "Construction Drone", "uk": "Будівельний дрон", "source": "translation-pack" },
-        "legendary-Construction_Drone": { "en": "Construction Drone", "uk": "Будівельний дрон", "source": "translation-pack" },
-        "normal-Construction_Drone_spectral": { "en": "Construction Drone", "uk": "Будівельний дрон", "source": "translation-pack" },
-        "uncommon-Construction_Drone_spectral": { "en": "Construction Drone", "uk": "Будівельний дрон", "source": "translation-pack" },
-        "rare-Construction_Drone_spectral": { "en": "Construction Drone", "uk": "Будівельний дрон", "source": "translation-pack" },
-        "epic-Construction_Drone_spectral": { "en": "Construction Drone", "uk": "Будівельний дрон", "source": "translation-pack" },
-        "legendary-Construction_Drone_spectral": { "en": "Construction Drone", "uk": "Будівельний дрон", "source": "translation-pack" }
-      },
-      "technology-name": {
-        "spectral-drones": { "en": "Spectral Drones", "uk": "Спектральні дрони", "source": "translation-pack" }
       }
     },
     "corrundum": {
@@ -10385,18 +10681,6 @@
         "razi-singularity-test-fire": { "en": "Intergalactic Singularity Test Fire", "uk": "Пробний запуск міжгалактичної сингулярності", "source": "translation-pack" },
         "razi-stable-intergalactic-singularity": { "en": "Stable Intergalactic Singularity", "uk": "Стабільна міжгалактична сингулярність", "source": "translation-pack" },
         "razi-intergalactic-transceiver-signal": { "en": "Intergalactic Signal Lock", "uk": "Захоплення міжгалактичного сигналу", "source": "translation-pack" }
-      }
-    },
-    "real-smoke": {
-      "title": "Real Smoke",
-      "notInstalled": true,
-      "entity-name": {
-        "real-smoke-light": { "en": "Light real smoke", "uk": "Легкий дим", "source": "translation-pack" },
-        "real-smoke-industrial": { "en": "Industrial real smoke", "uk": "Промисловий дим", "source": "translation-pack" },
-        "real-smoke-soot": { "en": "Soot real smoke", "uk": "Сажовий дим", "source": "translation-pack" },
-        "real-smoke-heavy": { "en": "Heavy real smoke", "uk": "Густий дим", "source": "translation-pack" },
-        "real-smoke-exhaust": { "en": "Exhaust real smoke", "uk": "Вихлопний дим", "source": "translation-pack" },
-        "real-smoke-blast": { "en": "Blast real smoke", "uk": "Дим вибуху", "source": "translation-pack" }
       }
     },
     "rec-blue-plus": {
