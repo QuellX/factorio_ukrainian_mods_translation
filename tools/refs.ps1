@@ -4,7 +4,7 @@ $ErrorActionPreference = 'Stop'
 # whose target name does not exist in any en locale (game + mods) -> Factorio shows "Unknown key: item-name.x".
 # Typical cause: a mod renamed its prototypes (Krastorio2 2.x added "kr-") but its uk locale still uses old names.
 # -Fix writes locale\uk\ref-fixes.cfg: stale refs replaced by the matching ref from the English string of the same key.
-$repo = 'E:\games\mods\locale'; $modsDir = "$repo\mods"; $packDir = "$repo\ukrainian-mods-translation\locale\uk"
+$repo = Split-Path $PSScriptRoot -Parent; $modsDir = "$repo\mods"; $packDir = "$repo\ukrainian-mods-translation\locale\uk"
 $game = 'E:\games\steam\steamapps\common\Factorio\data'
 function ParseDir($dir, $h) {
   foreach ($f in Get-ChildItem $dir -Filter *.cfg -ErrorAction SilentlyContinue) {

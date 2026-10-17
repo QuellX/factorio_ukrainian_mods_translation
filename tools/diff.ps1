@@ -1,4 +1,4 @@
-param([string]$Root = 'E:\games\mods\locale\mods', [string]$Out)
+param([string]$Root = "$(Split-Path $PSScriptRoot -Parent)\mods", [string]$Out)
 $ErrorActionPreference = 'Stop'
 New-Item -ItemType Directory -Force $Out | Out-Null
 

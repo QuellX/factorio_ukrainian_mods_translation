@@ -1,6 +1,6 @@
 $ErrorActionPreference = 'Stop'
-$root = 'E:\games\mods\locale\mods'
-$outDir = 'E:\games\mods\locale\ukrainian-mods-translation\locale\uk'
+$root = "$(Split-Path $PSScriptRoot -Parent)\mods"
+$outDir = "$(Split-Path $PSScriptRoot -Parent)\ukrainian-mods-translation\locale\uk"
 function ParseFile($f, $h, $tag) {
   $sec = ''
   foreach ($line in [IO.File]::ReadAllLines($f, [Text.Encoding]::UTF8)) {

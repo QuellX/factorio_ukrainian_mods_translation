@@ -1,5 +1,5 @@
 ﻿$ErrorActionPreference = 'Stop'
-$root = 'E:\games\mods\locale'
+$root = Split-Path $PSScriptRoot -Parent
 $myDir = "$root\ukrainian-mods-translation\locale\uk"
 $game = 'E:\games\steam\steamapps\common\Factorio\data'
 $outFile = "$root\terminology-uk.json"

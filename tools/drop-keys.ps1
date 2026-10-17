@@ -3,7 +3,7 @@ $ErrorActionPreference = 'Stop'
 # Remove keys from pack files. $List: text file, one "<file.cfg>|<section>/<key>" per line (# = comment).
 # Used to drop translations that were made for a mod that is no longer installed but whose keys now
 # override another installed mod or the base game (see stale.ps1 -Detail).
-$packDir = 'E:\games\mods\locale\ukrainian-mods-translation\locale\uk'
+$packDir = "$(Split-Path $PSScriptRoot -Parent)\ukrainian-mods-translation\locale\uk"
 $byFile = @{}
 foreach ($l in [IO.File]::ReadAllLines($List, [Text.Encoding]::UTF8)) {
   $t = $l.Trim(); if ($t -eq '' -or $t[0] -eq '#') { continue }

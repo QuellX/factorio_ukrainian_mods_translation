@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 # Package ukrainian-mods-translation/ into <Factorio mods>\ukrainian-mods-translation_<version>.zip
 # (version from info.json). Older versions of our zip there are deleted so Factorio sees only one.
-$src = 'E:\games\mods\locale\ukrainian-mods-translation'
+$src = "$(Split-Path $PSScriptRoot -Parent)\ukrainian-mods-translation"
 $dest = 'E:\games\mods\Factorio'
 $info = [IO.File]::ReadAllText("$src\info.json", [Text.Encoding]::UTF8) | ConvertFrom-Json
 $zip = Join-Path $dest "$($info.name)_$($info.version).zip"

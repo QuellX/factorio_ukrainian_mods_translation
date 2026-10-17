@@ -5,7 +5,7 @@ param([string[]]$Mods)
 # values equal to the mod's English (untranslated), keys already copied from another mod (first one wins).
 # Regenerates all own-*.cfg (or only those of -Mods). Rerun after mods update; old own-* of removed mods are kept.
 $ErrorActionPreference = 'Stop'
-$root = 'E:\games\mods\locale'
+$root = Split-Path $PSScriptRoot -Parent
 $myDir = "$root\ukrainian-mods-translation\locale\uk"
 $utf8 = New-Object Text.UTF8Encoding($false)
 

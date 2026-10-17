@@ -1,6 +1,6 @@
 # Ukrainian translation pack for the user's Factorio mods
 
-This folder (`E:\games\mods\locale`) is a git repo (remote `git@github.com:QuellX/factorio_ukrainian_mods_translation.git`) holding the translation mod we build. **Unpacked copies** of the user's Factorio mods (one folder each, read-only reference, plus `mod-list.json`/`mod-settings.dat`) live in `mods/`, which is git-ignored — never commit third-party mod files. A copy of our own mod may also sit there (`mods/ukrainian-mods-translation*`); every tool skips it. Archives (`*.zip`, `*.7z`, `*.rar`) are git-ignored too.
+This folder (`E:\games\mods\my\factorio\ukrainian translation`; moved from `E:\games\mods\locale` in 2026-10 — note the space in the path) is a git repo (remote `git@github.com:QuellX/factorio_ukrainian_mods_translation.git`) holding the translation mod we build. **Unpacked copies** of the user's Factorio mods (one folder each, read-only reference, plus `mod-list.json`/`mod-settings.dat`) live in `mods/`, which is git-ignored — never commit third-party mod files. A copy of our own mod may also sit there (`mods/ukrainian-mods-translation*`); every tool skips it. Archives (`*.zip`, `*.7z`, `*.rar`) are git-ignored too.
 
 - Our mod: `ukrainian-mods-translation/` (source). Packaged zip goes to the real mods folder: `E:\games\mods\Factorio\ukrainian-mods-translation_<version>.zip` (current 1.6.0; close Factorio first — a running game locks the zip; `build-zip.ps1` deletes older versions of our zip there).
 - Official game locale (terminology source of truth): `E:\games\steam\steamapps\common\Factorio\data\{base,space-age,quality,elevated-rails,recycler,core}\locale\{en,uk}\*.cfg`.
@@ -51,7 +51,7 @@ This folder (`E:\games\mods\locale`) is a git repo (remote `git@github.com:Quell
 - English identifiers the user must type (entity IDs in examples, Shortcuts-ick option tokens) stay English.
 - Open question: Angel's "Smelting" train theme is still «Металургійний …» (user not asked to change yet).
 
-## Tools (`tools/`, paths are hard-coded to this machine)
+## Tools (`tools/`; the repo root is derived from the script location via `Split-Path $PSScriptRoot -Parent`, so tools work wherever the repo lives — keep it that way in new tools. Still machine-specific: game locale `E:\games\steam\...` and zip destination `E:\games\mods\Factorio`)
 - `check-versions.ps1 [-Record names | -All]` — compare `mods/` against `translated-versions.json` / record translated state (exit code 1 = work needed).
 - `diff-global.ps1 -Mods a,b | -AllNew -Out <dir> [-Ref ru]` — **preferred**: writes `<dir>\todo\<mod>.cfg` (strings with no uk anywhere: pack or any mod) and `<dir>\existing\<mod>.cfg` (`;EN english` + `key=uk` of existing translations, for terminology review). `-Ref ru` adds `;RU …` lines (mod's own ru, else any mod's) above todo keys.
 - `lookup.ps1 -Pattern <regex> [-Key]` — search the official game locale (English text, or `section/key` with `-Key`) and print `section/key | en | uk`. Its console output is mangled when captured through bash; for exact uk text grep the game's `locale\uk` files directly.
@@ -61,7 +61,7 @@ This folder (`E:\games\mods\locale`) is a git repo (remote `git@github.com:Quell
 - `diff.ps1 -Out <dir>` — older per-mod variant (only the mod's own uk counts).
 - `gloss.ps1 -Out <file>` — rebuild official en→uk glossary.
 - `verify.ps1` — conflicts between pack files + keys still untranslated, counting uk from any mod (depends on the installed modset; with the SE modpack ≈2335: ≈2276 factory-insight `en-fi-*`/`de-fi-*` copies + 33 mod names (intentionally English) + ≈30 names/format-only strings).
-- `tokens.ps1` — placeholder integrity (2 expected: `sp-spidertron-dock` drops a repeated `__1__`; LTN `ltn-message/stack` has more Ukrainian plural forms).
+- `tokens.ps1` — placeholder integrity (2 expected at pack 1.5.0: `sp-spidertron-dock` drops a repeated `__1__`; LTN `ltn-message/stack` has more Ukrainian plural forms. With the 2.1.22 SE modpack it reports 115 — mostly `fi-*`, SE Informatron pages and Factory Planner `fp/*` own uk where English changed upstream or plurals were rephrased; not yet reviewed). `NO-EN` lines are keys of mods not installed — ignore.
 - `normalize.ps1` — merge repeated sections per file, report duplicate keys.
 - `crossdup.ps1` — drop cross-file duplicate keys, drop empty sections, rebuild zip (calls `build-zip.ps1`).
 - `build-zip.ps1` — package the pack as `E:\games\mods\Factorio\ukrainian-mods-translation_<info.json version>.zip`, deleting older versions of our zip. Also runs automatically from the git `pre-push` hook (`.githooks/pre-push`; enable per clone with `git config core.hooksPath .githooks`); a failed build aborts the push.

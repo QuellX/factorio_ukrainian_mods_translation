@@ -5,7 +5,7 @@ param([string]$Dump = "$env:APPDATA\Factorio\script-output\data-raw-dump.json")
 # Needs a fresh data dump of the installed modset (close Factorio first):
 #   factorio.exe --mod-directory "E:\games\mods\Factorio" --dump-data   (writes %APPDATA%\Factorio\script-output\data-raw-dump.json)
 $ErrorActionPreference = 'Stop'
-$out = 'E:\games\mods\locale\ukrainian-mods-translation\locale\uk\type-name-fixes.cfg'
+$out = "$(Split-Path $PSScriptRoot -Parent)\ukrainian-mods-translation\locale\uk\type-name-fixes.cfg"
 $itemTypes = @('ammo','armor','capsule','gun','item-with-entity-data','item-with-inventory','item-with-label','item-with-tags',
   'module','rail-planner','repair-tool','selection-tool','blueprint','blueprint-book','copy-paste-tool','deconstruction-item',
   'upgrade-item','spidertron-remote','tool','space-platform-starter-pack')

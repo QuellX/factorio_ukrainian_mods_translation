@@ -7,7 +7,7 @@ param([switch]$MoveExisting)
 #   Colour keys alien-biomes also uses for tiles/decoratives (listed before ab-tree in its en locale) stay translated.
 # Our own mod keeps its title (it is Ukrainian by design).
 $ErrorActionPreference = 'Stop'
-$root = 'E:\games\mods\locale'
+$root = Split-Path $PSScriptRoot -Parent
 $myDir = "$root\ukrainian-mods-translation\locale\uk"
 $utf8 = New-Object Text.UTF8Encoding($false)
 $self = 'ukrainian-mods-translation'

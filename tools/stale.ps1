@@ -5,7 +5,7 @@ $ErrorActionPreference = 'Stop'
 #   dead   = no installed mod / game defines it -> leftover from a removed mod (harmless, dropped later)
 # -Detail lists "used" keys of files whose other keys are mostly dead: these were translated for a removed mod
 # and may now override a different installed mod's text (check them).
-$repo = 'E:\games\mods\locale'; $packDir = "$repo\ukrainian-mods-translation\locale\uk"
+$repo = Split-Path $PSScriptRoot -Parent; $packDir = "$repo\ukrainian-mods-translation\locale\uk"
 $game = 'E:\games\steam\steamapps\common\Factorio\data'
 function Keys($dir, $h, $tag) {
   foreach ($f in Get-ChildItem $dir -Filter *.cfg -ErrorAction SilentlyContinue) {

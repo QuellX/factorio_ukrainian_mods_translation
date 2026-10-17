@@ -1,4 +1,4 @@
-$dir = 'E:\games\mods\locale\ukrainian-mods-translation\locale'
+$dir = "$(Split-Path $PSScriptRoot -Parent)\ukrainian-mods-translation\locale"
 foreach ($f in Get-ChildItem $dir -Recurse -Filter *.cfg) {
   $secs = [ordered]@{}; $secs[''] = [ordered]@{}
   $sec = ''; $dupSec = @{}; $seen = @{}; $dupKeys = @()

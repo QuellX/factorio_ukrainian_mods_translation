@@ -1,4 +1,4 @@
-$dir = 'E:\games\mods\locale\ukrainian-mods-translation\locale\uk'; $seen = @{}; $removed = 0
+$dir = "$(Split-Path $PSScriptRoot -Parent)\ukrainian-mods-translation\locale\uk"; $seen = @{}; $removed = 0
 foreach ($f in Get-ChildItem $dir -Filter *.cfg | Sort-Object Name) {
   $sec = ''; $out = New-Object Collections.Generic.List[string]
   foreach ($l in [IO.File]::ReadAllLines($f.FullName, [Text.Encoding]::UTF8)) {
